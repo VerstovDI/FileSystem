@@ -1,16 +1,4 @@
 
-git add *
-git commit -m Уdecision_tree""
-git push -u origin homework_08_ml
-
-git checkout -b homework_05_ml upstream/homework_05_ml в главной папке то
-git checkout homework_07_ml
-
-git checkout master чтобы скачать 
- 
- 
-pytest чтобы тесты прогнать локально в баше 
-потому что запускать надо из папки проекта
 
 
 git add * если руками добавл€ешь в папку файлы
@@ -29,11 +17,6 @@ git rm -- venv/pyvenv.cfg
 
 или же git rm -f  *.cfg  удалить все файлы этого формата
 
-git commit -m "remove"
-git push -u origin homework_05_ml
-
-git fetch upstream
-git checkout -b homework_08_ml upstream/homework_08_ml
 
 
 git clone https://github.com/VerstovDI/FileSystem (делаем в самы первый раз)
