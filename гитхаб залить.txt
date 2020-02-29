@@ -1,25 +1,12 @@
+git config --global user.name "AidarValshin"
 
-
-
-git add * если руками добавляешь в папку файлы
-
- git config --global user.name "AidarValshin"
-
-удалять
+remove
 git  rm --  homeworks/homework_05_ml/1/Пример/Exercises_with_solutions.ipynb
-git rm -- lectures/lecture_04/notebooks/lecture_04_part02.ipynb
-git rm -- lectures/lecture_05_ml/notebooks/lecture_05_ml_numpy.ipynb
-git rm -- lectures/lecture_04/notebooks/lecture_04_part02.ipynb
-git rm -- lectures/lecture_05_ml/notebooks/lecture_05_ml_part_2_pandas.ipynb
-git rm -- lectures/lecture_05_ml/pre_lection_notebooks/atom_pre_5_ml_numpy_pandas.ipynb
-git rm -- setup.cfg
-git rm -- venv/pyvenv.cfg
 
 или же git rm -f  *.cfg  удалить все файлы этого формата
 
 
-
-git clone https://github.com/VerstovDI/FileSystem (делаем в самы первый раз)
+git clone https://github.com/AidarValshin/FileSystem  (делаем в самы первый раз)
 cd FileSystem
 git pull origin master( все последующие разы после входа)
 git checkout Functions (ваша ветка)
