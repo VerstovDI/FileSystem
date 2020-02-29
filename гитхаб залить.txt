@@ -1,0 +1,45 @@
+
+git add *
+git commit -m “decision_tree""
+git push -u origin homework_08_ml
+
+git checkout -b homework_05_ml upstream/homework_05_ml в главной папке то
+git checkout homework_07_ml
+
+git checkout master чтобы скачать 
+ 
+ 
+pytest чтобы тесты прогнать локально в баше 
+потому что запускать надо из папки проекта
+
+
+git add * если руками добавляешь в папку файлы
+
+ git config --global user.name "AidarValshin"
+
+удалять
+git  rm --  homeworks/homework_05_ml/1/Пример/Exercises_with_solutions.ipynb
+git rm -- lectures/lecture_04/notebooks/lecture_04_part02.ipynb
+git rm -- lectures/lecture_05_ml/notebooks/lecture_05_ml_numpy.ipynb
+git rm -- lectures/lecture_04/notebooks/lecture_04_part02.ipynb
+git rm -- lectures/lecture_05_ml/notebooks/lecture_05_ml_part_2_pandas.ipynb
+git rm -- lectures/lecture_05_ml/pre_lection_notebooks/atom_pre_5_ml_numpy_pandas.ipynb
+git rm -- setup.cfg
+git rm -- venv/pyvenv.cfg
+
+или же git rm -f  *.cfg  удалить все файлы этого формата
+
+git commit -m "remove"
+git push -u origin homework_05_ml
+
+git fetch upstream
+git checkout -b homework_08_ml upstream/homework_08_ml
+
+
+git clone https://github.com/VerstovDI/FileSystem (делаем в самы первый раз)
+cd FileSystem
+git pull origin master( все последующие разы после входа)
+git checkout Functions (ваша ветка)
+git add *
+git commit -m “ваш коммент"
+git push origin Functions (ваша ветка)
