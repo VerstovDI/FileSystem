@@ -1,5 +1,5 @@
 package Structure.FileSystemStructure;
 
 public interface IParameterReader {
-    IParameterReader ParameterReader ();
+    IParameterReader ParameterReader ();    // Считыватель параметров
 }
