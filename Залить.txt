@@ -14,4 +14,4 @@ git pull origin master( все последующие разы после входа,коипирует из вашей репы
 git checkout master (ваша ветка)
 git add *
 git commit -m "инструкция по заливке" (ваш комент)
-git push origin Functions (ваша ветка)
+git push origin master (ваша ветка)
