@@ -1,0 +1,17 @@
+//делаем форк репозитори€  ƒанилы
+git clone https://github.com/AidarValshin/FileSystem (делаем в самы первый раз)
+git remote add upstream https://github.com/VerstovDI/FileSystem ( в самый первый раз)
+
+
+//последующие разы
+cd FileSystem
+
+git fetch upstream (,коипирует из ƒанилиной  репы на комп )
+//git merge upstream/master
+
+git pull origin master( все последующие разы после входа,коипирует из вашей репы на комп)
+
+git checkout master (ваша ветка)
+git add *
+git commit -m "инструкци€ по заливке" (ваш комент)
+git push origin master (ваша ветка)
