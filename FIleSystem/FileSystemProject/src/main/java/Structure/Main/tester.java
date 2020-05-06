@@ -2,6 +2,8 @@ package Structure.Main;
 
 import Functions.CreateFile.CreateFileCommand;
 import Functions.CreateFile.CreateFileParameters;
+import Functions.DeleteFile.DeleteFileCommand;
+import Functions.DeleteFile.DeleteFileParameters;
 import Structure.FileSystemStructure.FileSystem;
 import Structure.FileSystemStructure.IMessageWriter;
 
@@ -30,5 +32,9 @@ public class tester {
         for (int i = 0; i < 2; i++) {
             fileCommand.Execute(newFileSystem, fileParameters, imw);
         }
+        // отладка удаления файла
+        DeleteFileCommand delFileCommand = new DeleteFileCommand();
+        DeleteFileParameters delFileParameters = new DeleteFileParameters();
+        delFileCommand .Execute(newFileSystem, delFileParameters , imw);
     }
 }
