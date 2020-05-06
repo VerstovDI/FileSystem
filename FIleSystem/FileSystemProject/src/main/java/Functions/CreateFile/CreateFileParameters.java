@@ -1,9 +1,10 @@
 package Functions.CreateFile;
 
-import Functions.CreateFS.CreateFSParameters;
 import Structure.FileSystemStructure.DataInfo;
 import Structure.FileSystemStructure.IParameterReader;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class CreateFileParameters implements IParameterReader {
@@ -43,30 +44,39 @@ public class CreateFileParameters implements IParameterReader {
     @Override
     public IParameterReader ParameterReader() {
         Scanner in = new Scanner(System.in);
-        String fileName;
-        int fileSize;
+        String fileName;    // Имя создаваемого файла
+        int fileSize;       // Размер создаваемого файла
+        boolean fl = false;
         do {
-            System.out.format("Введите имя создаваемого файла: ");
+            if (fl) {
+                System.out.println("Incorrect input. Repeat, please: ");
+            }
+            System.out.format("Enter file's name: ");
             fileName = in.nextLine();
-            System.out.format("Введите размер создаваемого файла: ");
+            System.out.format("Enter file's size (in bytes): ");
             fileSize = in.nextInt();
-        } while (!inputCheck(fileName, fileSize));
-        DataInfo fileInfo = createDataInfo(fileName, fileSize);
-        this.fileInfo = fileInfo;
+        } while (!(fl = inputCheck(fileName, fileSize)));
+        this.fileInfo = new DataInfo(getCurrentDate(), fileName, fileSize);
         return this;
     }
 
-    private DataInfo createDataInfo(String fileName, int fileSize) {
+    // Функция получения текущей даты (дата создания файла) в формате [dd, mm, yyyy] - массив int
+    private int[] getCurrentDate() {
         int[] creationDate = new int[3];
-        // ЗАГЛУШКА
-        creationDate[0] = 2;
-        creationDate[1] = 5;
-        creationDate[2] = 2020;
-        //
-        return new DataInfo(creationDate, fileName, fileSize);
+        Date dateNow = new Date();
+        SimpleDateFormat formatForDateNow = new SimpleDateFormat("d.M.y");
+        String dateString = formatForDateNow.format(dateNow);
+        String[] parsedDateStrings = dateString.split("\\.");
+        for (int i = 0; i < parsedDateStrings.length; i++) {
+            creationDate[i] = Integer.parseInt(parsedDateStrings[i]);
+        }
+        return creationDate;
     }
 
+    // Функция проверки корректности введённых данных
     private boolean inputCheck(String fileName, int fileSize) {
-        return fileName.length() <= 63 && fileName.length() > 0 && fileSize > 0;
+        return fileName.length() <= DataInfo.fileNameLengthLimit
+                && fileName.length() > 0
+                && fileSize > 0;
     }
 }
