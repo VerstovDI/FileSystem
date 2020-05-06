@@ -44,6 +44,7 @@ public class tester {
         for (int i = 0; i < 2; i++) {
             fileCommand.Execute(newFileSystem, fileParameters, imw);
         }
+
         // Отладка добавление информации в файл
         AddInfoCommand addInfoCommand = new AddInfoCommand();
         AddInfoParameters addInfoParameters = new AddInfoParameters();
