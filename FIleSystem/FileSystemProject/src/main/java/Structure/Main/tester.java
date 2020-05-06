@@ -40,7 +40,7 @@ public class tester {
         // Отладка создания файла (текущий сегмент полон, создаём новый, добавляем в него, прерасчитываем head)
 
         fileCommand.Execute(newFileSystem, fileParameters, imw);
-        // Отладка создания файла (один из сегментов полон, второй полон частично)
+        //  Отладка создания файла (один из сегментов полон, второй полон частично)
         for (int i = 0; i < 2; i++) {
             fileCommand.Execute(newFileSystem, fileParameters, imw);
         }

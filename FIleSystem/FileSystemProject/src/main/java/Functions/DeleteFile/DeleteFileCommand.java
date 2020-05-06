@@ -54,7 +54,7 @@ public class DeleteFileCommand implements ICommand {
         }
     }
 
-    // по сути дефрагментация всех файлов далее вверх по сегменту.
+    //  по сути дефрагментация всех файлов далее вверх по сегменту.
     //Начиная от текущего местоположения , иду вверх с помощью двух указателей firstPointerDataInfo и secondPointerDataInfo
     //	пока не конец сегмента или пока не встречу неудаленный файл.
     //firstPointerDataInfo за ним  secondPointerDataInfo
