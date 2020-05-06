@@ -1,7 +1,5 @@
 package Structure.Main;
 
-import Functions.AddInfo.AddInfoCommand;
-import Functions.AddInfo.AddInfoParameters;
 import Functions.CreateFile.CreateFileCommand;
 import Functions.CreateFile.CreateFileParameters;
 import Functions.DeleteFile.DeleteFileCommand;
@@ -38,11 +36,5 @@ public class tester {
         DeleteFileCommand delFileCommand = new DeleteFileCommand();
         DeleteFileParameters delFileParameters = new DeleteFileParameters();
         delFileCommand .Execute(newFileSystem, delFileParameters , imw);
-        // отладка доб инфы
-        AddInfoCommand addInfoCommand = new AddInfoCommand();
-        AddInfoParameters addInfoParameters = new AddInfoParameters();
-        addInfoCommand.Execute(newFileSystem, addInfoParameters , imw);
-
-
     }
 }
