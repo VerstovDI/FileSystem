@@ -3,7 +3,7 @@ package Structure.FileSystemStructure;
 import java.util.ArrayList;
 
 public class Segment {
-    public static final int segmentSize = 1024;
+    public static final int segmentSize = 1024;         // Размер сегмента (в байтах) по ТЗ
     public static final int segmentsLimit = 31;         // Ограничение на максимальное число сегментов в ФС
     public static final int dataInfoCountLimit = 5;     // Максимальное число записей о файла в сегменте
     public static int counter;                          // Счетчик занятых сегментов
@@ -22,6 +22,6 @@ public class Segment {
     }
 
     public boolean isEmptySegment() {
-        return info.isEmpty();
+        return this.info.isEmpty();
     }
 }

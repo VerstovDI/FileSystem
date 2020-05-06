@@ -6,7 +6,6 @@ import Structure.FileSystemStructure.IParameterReader;
 import java.util.Scanner;
 
 public class AddInfoParameters implements IParameterReader {
-
     DataInfo fileInfo;
     @Override
     public IParameterReader ParameterReader() {
@@ -28,15 +27,18 @@ public class AddInfoParameters implements IParameterReader {
     }
 
     private boolean inputCheck(String fileName, int fileSize,String text) {
-        return fileName.length() <= 63 && fileName.length() > 0 && fileSize > 0 && text.length() < fileSize;
+        return fileName.length() <= DataInfo.fileNameLengthLimit
+                && fileName.length() > 0
+                && fileSize > 0
+                && text.length() < fileSize;
     }
 
     private String readBuffer(Scanner in) {
-        String string = "";
+        StringBuilder string = new StringBuilder();
         while (in.hasNextLine()) { // конец ввода ctrl + D
             String addString = in.nextLine();
-            string += addString;
+            string.append(addString);
         }
-        return string;
+        return string.toString();
     }
 }
