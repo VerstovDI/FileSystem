@@ -19,22 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/FileSystemProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="1) Сделал создание файла. Пока что файлы добавляются только в конец, с учётом того, что дальше всё остальное место пусто. По степени развития улучшим. 2) Протестил то, что есть. 3) Переписал классы Segment и DataInfo, скорректирова FileSystem. я устал. пока хватит">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/DataInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/DataInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/ICommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IParameterReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IParameterReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/Segment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/FileSystemProject.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/Segment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/Segment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/DataInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/DataInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,6 +161,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="178" key="#Project_Structure" timestamp="1588424913410">
@@ -227,6 +216,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588428766008" />
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588756656302">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588756656302" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1588439917951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -241,7 +234,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Structure/Main/tester.java</url>
-          <line>30</line>
+          <line>32</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
