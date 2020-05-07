@@ -1,8 +1,10 @@
+
 package Functions.AddInfo;
 
 import Structure.FileSystemStructure.*;
 
 public class AddInfoCommand implements ICommand {
+
     AddInfoParameters params;
 
     class FilePlace {
@@ -30,7 +32,8 @@ public class AddInfoCommand implements ICommand {
     @Override
     public void ReadParameters(IParameterReader p) {
         IParameterReader paramReader = p.ParameterReader();
-        this.params = (AddInfoParameters) paramReader;
+        AddInfoParameters fileParams = (AddInfoParameters) paramReader;
+        this.params = fileParams;
     }
 
     private FilePlace findFile(FileSystem fs,DataInfo fileInfo) {
@@ -38,7 +41,7 @@ public class AddInfoCommand implements ICommand {
             Segment segment = fs.seg.get(i);
             for (int j = 0; j < segment.info.size() ;j++) {
                 DataInfo dataInfo = segment.info.get(j);
-                if (dataInfo != null && dataInfo.getNameFile().equals(params.fileInfo.getNameFile())) {
+                if (dataInfo != null && dataInfo.nameFile.equals(params.fileInfo.nameFile)) {
                     return new FilePlace(i,j);
                 }
             }

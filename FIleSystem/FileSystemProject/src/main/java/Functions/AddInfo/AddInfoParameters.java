@@ -1,3 +1,4 @@
+
 package Functions.AddInfo;
 
 import Structure.FileSystemStructure.DataInfo;
@@ -42,3 +43,4 @@ public class AddInfoParameters implements IParameterReader {
         return string.toString();
     }
 }
+
