@@ -1,9 +1,10 @@
 package Functions.DeleteFile;
 
+import Functions.ParameterReaders.ReadParameters;
 import Structure.FileSystemStructure.*;
 
 public class DeleteFileCommand implements ICommand {
-    DeleteFileParameters params;
+    private String fileName;
 
     // вспомогательный класс для нахождения места вставки. Потом вынесем.
 
@@ -20,9 +21,9 @@ public class DeleteFileCommand implements ICommand {
     @Override
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {
         this.ReadParameters(parameter);
-        FilePlace filePlace = findFile(fs, this.params.fileName);
+        FilePlace filePlace = findFile(fs, fileName);
         if (filePlace != null) {
-            System.out.println(" удаляем файл  " + params.fileName);
+            System.out.println(" удаляем файл  " + fileName);
             Segment segment = fs.seg.get(filePlace.numberSegment);
             DataInfo dataInfo = segment.info.get(filePlace.numberRecord);
             dataInfo.setTypeNote(0);
@@ -35,10 +36,8 @@ public class DeleteFileCommand implements ICommand {
     }
 
     @Override
-    public void ReadParameters(IParameterReader parameterReader) {
-        IParameterReader paramReader = parameterReader.ParameterReader();
-        DeleteFileParameters fileParams = (DeleteFileParameters) paramReader;
-        this.params = fileParams;
+    public void ReadParameters(IParameterReader parameter) {
+        this.fileName = ((ReadParameters) parameter).readFilename("Введите имя удяляемого файла  ");
     }
 
 
