@@ -40,6 +40,10 @@ public class DataInfo {
         this.size = size;
     }
 
+    public void addSize(int size) {
+        this.size += size;
+    }
+
     public int getTypeNote() {
         return typeNote;
     }
