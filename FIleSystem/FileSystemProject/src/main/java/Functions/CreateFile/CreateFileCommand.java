@@ -2,16 +2,14 @@ package Functions.CreateFile;
 
 import Structure.FileSystemStructure.*;
 
-import java.util.Date;
 
 public class CreateFileCommand implements ICommand {
-    CreateFileParameters params;
+    CreateFileParameters params; // Ссылка на экземляр класса, реализующего интерфейс IParameterReader и содержащего ссылку на DataInfo.
 
    /* public CreateFileCommand(String fileName, int fileSize) {
         this.fileName = fileName;
         this.fileSize = fileSize;
     }*/
-
 
     @Override
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {
@@ -20,12 +18,10 @@ public class CreateFileCommand implements ICommand {
         createFile(fs, fileInfo);
     }
 
-
     @Override
     public void ReadParameters(IParameterReader p) {
         IParameterReader paramReader = p.ParameterReader();
-        CreateFileParameters fileParams = (CreateFileParameters) paramReader;
-        this.params = fileParams;
+        this.params = (CreateFileParameters) paramReader;
     }
 
     private void createFile(FileSystem fs, DataInfo fileInfo) {
@@ -39,13 +35,12 @@ public class CreateFileCommand implements ICommand {
     Пока договорились вставлять ТОЛЬКО В КОНЕЦ до победного, пока считаем, что дальше идёт только пустое место
     Считаем, что файлы вставляем подряд. Находим последний занятый сегмент, вставляем в последнюю свободную dataInfo сегмента, если она есть.
     Иначе - пишем в новый сегмент, считая его местоположение.*/
+    // Переделать более универсально надо.
     private int[] findPlace(FileSystem fs, DataInfo newFileInfo) {
         int[] newFilePosition = new int[2];
 
         if (fs.seg.isEmpty()) {    // Если ФС пустая - добавляем первый сегмент, возвращаем искомые позиции
-            fs.seg.add(new Segment(Segment.segmentSize * Segment.segmentsLimit + 1));
-            Segment.currentSegment = 0;
-            Segment.counter++;
+            addSegment(fs,Segment.segmentSize * Segment.segmentsLimit + 1);
             newFilePosition = new int[] { Segment.currentSegment, 0 };
             return newFilePosition;
         } else {
@@ -54,9 +49,7 @@ public class CreateFileCommand implements ICommand {
                 newFilePosition = new int[]{Segment.currentSegment, currSegment.info.size()};
             } else {
                 if (Segment.currentSegment < fs.cntOfSegments) {
-                    fs.seg.add(new Segment(currSegment.head + segmentFilesSize(currSegment)));
-                    Segment.currentSegment++;
-                    Segment.counter++;
+                    addSegment(fs,currSegment.head + segmentFilesSize(currSegment));
                     newFilePosition = new int[]{Segment.currentSegment, 0};
                     return newFilePosition;
                 } else {
@@ -71,12 +64,19 @@ public class CreateFileCommand implements ICommand {
     private int segmentFilesSize(Segment segm) {
         int sz = 0;
         for (DataInfo di : segm.info) {
-            sz += di.size;
+            sz += di.getSize();
         }
         return sz;
     }
 
-    // Функция добавления сегмента
-    private void addSegment(FileSystem fs) {
+    // Функция добавления сегмента [пока не дописана]
+    private void addSegment(FileSystem fs, int head) {
+        fs.seg.add(new Segment(head));
+        if (Segment.counter == 0) {
+            Segment.currentSegment = 0;
+        } else {
+            Segment.currentSegment++;
+        }
+        Segment.counter++;
     }
 }

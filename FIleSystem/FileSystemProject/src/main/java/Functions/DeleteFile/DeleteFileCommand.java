@@ -5,9 +5,13 @@ import Structure.FileSystemStructure.*;
 public class DeleteFileCommand implements ICommand {
     DeleteFileParameters params;
 
+<<<<<<< HEAD
 
     // вспомогательный класс для нахождения места вставки. Потом вынесем.
 
+=======
+    // вспомогательный класс для нахождения места вставки. Потом вынесем.
+>>>>>>> 8bc2ae2c5d6723ad241f7fbf1261780512f06bf5
     class FilePlace {
         private int numberSegment;
         private int numberRecord;
@@ -42,11 +46,17 @@ public class DeleteFileCommand implements ICommand {
         this.params = fileParams;
     }
 
+<<<<<<< HEAD
 
     // по сути дефрагментация всех файлов далее по сегменту.
     //Начиная от текущего местоположения currentDataInfo, иду вниз пока не конец сегмента или пока не встречу неудаленный файл
     // если след файл удален и его размер !=0, делаю его размер =0. А отнятый размер добавляю к размеру currentDataInfo
 
+=======
+    // по сути дефрагментация всех файлов далее по сегменту.
+    //Начиная от текущего местоположения currentDataInfo, иду вниз пока не конец сегмента или пока не встречу неудаленный файл
+    // если след файл удален и его размер !=0, делаю его размер =0. А отнятый размер добавляю к размеру currentDataInfo
+>>>>>>> 8bc2ae2c5d6723ad241f7fbf1261780512f06bf5
     private void rewriteSizeDown(int numberRecord, Segment segment, DataInfo currentDataInfo) {
         DataInfo tmpDataInfo = null;
         for (int i = numberRecord + 1; i < segment.info.size(); i++) {
@@ -58,8 +68,12 @@ public class DeleteFileCommand implements ICommand {
         }
     }
 
+<<<<<<< HEAD
 
     // по сути дефрагментация всех файлов далее вверх по сегменту.
+=======
+    //  по сути дефрагментация всех файлов далее вверх по сегменту.
+>>>>>>> 8bc2ae2c5d6723ad241f7fbf1261780512f06bf5
     //Начиная от текущего местоположения , иду вверх с помощью двух указателей firstPointerDataInfo и secondPointerDataInfo
     //	пока не конец сегмента или пока не встречу неудаленный файл.
     //firstPointerDataInfo за ним  secondPointerDataInfo
@@ -67,7 +81,10 @@ public class DeleteFileCommand implements ICommand {
     // Если след файл firstPointerDataInfo удален и его размер !=0 , добавляю размер firstPointerDataInfo в size, а размер второго указателя =0
     // Как только останавливаюсь, записываю значение переменной size в файл остановки.
     //В итоге весь размер подряд идущего пустого пространства и далее вверх записан в самом первом удаленном файле.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8bc2ae2c5d6723ad241f7fbf1261780512f06bf5
     private void rewriteSizeUp(int numberRecord, Segment segment) {
         if (numberRecord != 0) {
             DataInfo firstPointerDataInfo = null;
