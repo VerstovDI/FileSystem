@@ -1,7 +1,10 @@
 package Functions.ParameterReaders;
 
+import Structure.FileSystemStructure.DataInfo;
 import Structure.FileSystemStructure.IParameterReader;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class ReadParameters implements IParameterReader {
@@ -12,22 +15,50 @@ public class ReadParameters implements IParameterReader {
     }
 
     //@Override
-    //Считываем имя файлы.
-    // message текст запроса,который выведется на консоль
-    //Выполняется проверка имени на длину
-    public String readFilename(String message) {
+    // Считываем имя файлы.
+    // message - это текст запроса, который выведется на консоль
+    // Функция, выполняющая проверку имени файла на длину. Вовзвращает введённое имя в случае успеха.
+    public String readFileName(String message) {
         Scanner in = new Scanner(System.in);
         String fileName;
         do {
             System.out.format(message);
             fileName = in.nextLine();
         } while (!checkFileName(fileName));
-
         return fileName;
     }
 
-    // Проверка корректности имени
+    // Функция, выполняющая проверку размера файла. Вовзвращает введённый размер в случае успеха.
+    public int readFileSize(String message) {
+        Scanner in = new Scanner(System.in);
+        int fileSize;
+        do {
+            System.out.format(message);
+            fileSize = in.nextInt();
+        } while (!checkFileName(fileSize));
+        return fileSize;
+    }
+
+    // Функция получения текущей даты (дата создания файла) в формате [dd, mm, yyyy] - массив int
+    public static int[] getCurrentDate() {
+        int[] creationDate = new int[3];
+        Date dateNow = new Date();
+        SimpleDateFormat formatForDateNow = new SimpleDateFormat("d.M.y");
+        String dateString = formatForDateNow.format(dateNow);
+        String[] parsedDateStrings = dateString.split("\\.");
+        for (int i = 0; i < parsedDateStrings.length; i++) {
+            creationDate[i] = Integer.parseInt(parsedDateStrings[i]);
+        }
+        return creationDate;
+    }
+
+    // Проверка корректности имени файла
     private boolean checkFileName(String fileName) {
-        return fileName.length() <= 63 && fileName.length() > 0;
+        return fileName.length() <= DataInfo.fileNameLengthLimit && fileName.length() > 0;
+    }
+
+    // Проверка корректности размера файла
+    private boolean checkFileName(int fileSize) {
+        return fileSize > 0 && fileSize < Integer.MAX_VALUE / 10;
     }
 }

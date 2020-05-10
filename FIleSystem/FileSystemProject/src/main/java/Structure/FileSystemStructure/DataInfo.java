@@ -6,14 +6,17 @@ public class DataInfo {
     private String nameFile;     // Имя файла String, 1 <= length() <= fileNameLengthLimit
     private int size;            // Размер файла, > 0, Байт
     private int typeNote;        // Тип записи [временно стоит 1 - файл существует, 0 - файл удален (<=> "пустое место")]
-    //public int typeFile;      // Тип файла [поле временно убрано]
+    //public int typeFile;       // Тип файла [поле временно убрано]
 
     public DataInfo(int[] date, String fileName, int fileSize) { //, int typeNote, int typeFile) {
         this.date = date;
         this.nameFile = fileName;
         this.size = fileSize;
-        this.typeNote = 1; // Потом ИСПРАВИТЬ установлено по ДЕФОЛТУ, потом исправить.
+        this.typeNote = 1; // Потом ИСПРАВИТЬ установлено по ДЕФОЛТУ.
         //this.typeFile = typeFile;
+    }
+
+    public DataInfo() {
     }
 
     public int[] getDate() {

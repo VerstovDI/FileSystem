@@ -6,7 +6,7 @@ import Structure.FileSystemStructure.*;
 public class DeleteFileCommand implements ICommand {
     private String fileName;
 
-    // вспомогательный класс для нахождения места вставки. Потом вынесем.
+    // Вспомогательный класс для нахождения места вставки. Потом вынесем.
 
     class FilePlace {
         private int numberSegment;
@@ -30,20 +30,21 @@ public class DeleteFileCommand implements ICommand {
             rewriteSizeDown(filePlace.numberRecord, segment, dataInfo);
             rewriteSizeUp(filePlace.numberRecord, segment);
         } else {
-            System.out.println("Нет такого файла");
+            System.out.println("Такого файла не существует!");
         }
         message.write();
     }
 
     @Override
     public void ReadParameters(IParameterReader parameter) {
-        this.fileName = ((ReadParameters) parameter).readFilename("Введите имя удяляемого файла  ");
+        this.fileName = ((ReadParameters) parameter).readFileName("Введите имя удаляемого файла:  ");
     }
 
 
-    // по сути дефрагментация всех файлов далее по сегменту.
-    //Начиная от текущего местоположения currentDataInfo, иду вниз пока не конец сегмента или пока не встречу неудаленный файл
-    // если след файл удален и его размер !=0, делаю его размер =0. А отнятый размер добавляю к размеру currentDataInfo
+    /* По сути дефрагментация всех файлов далее по сегменту.
+    Начиная от текущего местоположения currentDataInfo, иду вниз пока не конец сегмента или пока не встречу не удаленный файл.
+    Если следующий файл удален и его размер !=0,то делаю его размер =0. А отнятый размер добавляю к размеру currentDataInfo.
+    */
 
     private void rewriteSizeDown(int numberRecord, Segment segment, DataInfo currentDataInfo) {
         DataInfo tmpDataInfo = null;
@@ -57,14 +58,15 @@ public class DeleteFileCommand implements ICommand {
     }
 
 
-    //  по сути дефрагментация всех файлов далее вверх по сегменту.
-    //Начиная от текущего местоположения , иду вверх с помощью двух указателей firstPointerDataInfo и secondPointerDataInfo
-    //	пока не конец сегмента или пока не встречу неудаленный файл.
-    //firstPointerDataInfo за ним  secondPointerDataInfo
-    // В переменную size  записываю размер стартового удаленного файла secondPointerDataInfo
-    // Если след файл firstPointerDataInfo удален и его размер !=0 , добавляю размер firstPointerDataInfo в size, а размер второго указателя =0
-    // Как только останавливаюсь, записываю значение переменной size в файл остановки.
-    //В итоге весь размер подряд идущего пустого пространства и далее вверх записан в самом первом удаленном файле.
+    /* По сути дефрагментация всех файлов далее вверх по сегменту.
+    Начиная от текущего местоположения, иду вверх с помощью двух указателей firstPointerDataInfo и secondPointerDataInfo,
+    пока не конец сегмента или пока не встречу не удаленный файл.
+    firstPointerDataInfo, за ним secondPointerDataInfo.
+    В переменную size записываю размер стартового удаленного файла secondPointerDataInfo.
+    Если следующий файл firstPointerDataInfo удален и его размер !=0, то добавляю размер firstPointerDataInfo в size, а размер второго указателя становится =0.
+    Как только останавливаюсь, записываю значение переменной size в файл остановки.
+    В итоге весь размер подряд идущего пустого пространства и далее вверх записан в самом первом удаленном файле.
+    */
 
     private void rewriteSizeUp(int numberRecord, Segment segment) {
         if (numberRecord != 0) {
