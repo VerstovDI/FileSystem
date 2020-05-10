@@ -9,7 +9,6 @@ import static Functions.FindPlace.FindPlace.findFile;
 public class DeleteFileCommand implements ICommand {
     private String fileName;
 
-    // Вспомогательный класс для нахождения места вставки. Потом вынесем.
 
     @Override
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {

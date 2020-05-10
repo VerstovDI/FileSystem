@@ -21,7 +21,7 @@ public class FindPlace {
         return this.numberOfRecord;
     }
 
-    //функция поиска файла по имени. возвращает место файла, или null.
+    //функция поиска файла по имени. возвращает место файла, или null. используется в DeleteFile
     public static FindPlace findFile(FileSystem fs, String fileName) {
         for (int i = 0; i < fs.seg.size(); i++) {
             Segment segment = fs.seg.get(i);
