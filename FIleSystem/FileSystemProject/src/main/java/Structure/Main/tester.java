@@ -6,9 +6,9 @@ package Structure.Main;
 import Functions.CreateFile.CreateFileCommand;
 import Functions.CreateFile.CreateFileParameters;
 import Functions.DeleteFile.DeleteFileCommand;
-import Functions.DeleteFile.DeleteFileParameters;
 import Structure.FileSystemStructure.FileSystem;
 import Structure.FileSystemStructure.IMessageWriter;
+import Functions.ParameterReaders.ReadParameters;
 
 
 public class tester {
@@ -35,11 +35,11 @@ public class tester {
 
         // отладка удаления файла
         DeleteFileCommand delFileCommand = new DeleteFileCommand();
-        DeleteFileParameters delFileParameters = new DeleteFileParameters();
+        ReadParameters delFileParameters = new ReadParameters();
         for (int i = 0; i < 4; i++) {
             delFileCommand.Execute(newFileSystem, delFileParameters, imw);
         }
-
+        delFileCommand.Execute(newFileSystem, delFileParameters, imw);
         // Отладка создания файла (текущий сегмент полон, создаём новый, добавляем в него, прерасчитываем head)
         fileCommand.Execute(newFileSystem, fileParameters, imw);
 
