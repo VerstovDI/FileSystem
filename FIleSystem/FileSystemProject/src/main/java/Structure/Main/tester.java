@@ -2,7 +2,6 @@ package Structure.Main;
 
 
 import Functions.AddInfo.AddInfoCommand;
-import Functions.AddInfo.AddInfoParameters;
 import Functions.CreateFile.CreateFileCommand;
 import Functions.DeleteFile.DeleteFileCommand;
 import Functions.ParameterReaders.ReadParameters;
@@ -48,11 +47,12 @@ public class tester {
             fileCommand.Execute(newFileSystem, fileCreationParameters, imw);
         }
 
-        // Отладка добавление информации в файл
+        // Отладка добавления информации в файл. Ввод информации прекращается после того как размер информации
+        //превысит или станет равным вводимому размеру. Не нужно нажимать ctrl+D как в прошлой версии!!!
         AddInfoCommand addInfoCommand = new AddInfoCommand();
-        AddInfoParameters addInfoParameters = new AddInfoParameters();
-        // Выход по Ctrl+D в конце
+        ReadParameters addInfoParameters = new ReadParameters();
         addInfoCommand.Execute(newFileSystem, addInfoParameters, imw);
+
     }
 
 }

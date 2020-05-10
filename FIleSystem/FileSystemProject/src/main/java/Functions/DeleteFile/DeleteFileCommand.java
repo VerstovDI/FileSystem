@@ -1,34 +1,27 @@
 package Functions.DeleteFile;
 
+import Functions.FindPlace.FindPlace;
 import Functions.ParameterReaders.ReadParameters;
 import Structure.FileSystemStructure.*;
+
+import static Functions.FindPlace.FindPlace.findFile;
 
 public class DeleteFileCommand implements ICommand {
     private String fileName;
 
     // Вспомогательный класс для нахождения места вставки. Потом вынесем.
 
-    class FilePlace {
-        private int numberSegment;
-        private int numberRecord;
-
-        FilePlace(int numberSegment, int numberRecord) {
-            this.numberRecord = numberRecord;
-            this.numberSegment = numberSegment;
-        }
-    }
-
     @Override
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {
         this.ReadParameters(parameter);
-        FilePlace filePlace = findFile(fs, fileName);
+        FindPlace filePlace = findFile(fs, fileName);
         if (filePlace != null) {
             System.out.println(" удаляем файл  " + fileName);
-            Segment segment = fs.seg.get(filePlace.numberSegment);
-            DataInfo dataInfo = segment.info.get(filePlace.numberRecord);
+            Segment segment = fs.seg.get(filePlace.getNumberOfSegment());
+            DataInfo dataInfo = segment.info.get(filePlace.getNumberOfRecord());
             dataInfo.setTypeNote(0);
-            rewriteSizeDown(filePlace.numberRecord, segment, dataInfo);
-            rewriteSizeUp(filePlace.numberRecord, segment);
+            rewriteSizeDown(filePlace.getNumberOfRecord(), segment, dataInfo);
+            rewriteSizeUp(filePlace.getNumberOfRecord(), segment);
         } else {
             System.out.println("Такого файла не существует!");
         }
@@ -90,17 +83,4 @@ public class DeleteFileCommand implements ICommand {
         }
     }
 
-
-    private FilePlace findFile(FileSystem fs, String fileName) {
-        for (int i = 0; i < fs.seg.size(); i++) {
-            Segment segment = fs.seg.get(i);
-            for (int j = 0; j < segment.info.size(); j++) {
-                DataInfo dataInfo = segment.info.get(j);
-                if (dataInfo != null && dataInfo.getNameFile().equals(fileName)) {
-                    return new FilePlace(i, j);
-                }
-            }
-        }
-        return null;
-    }
 }
