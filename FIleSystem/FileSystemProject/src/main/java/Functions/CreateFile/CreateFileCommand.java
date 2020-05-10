@@ -27,7 +27,7 @@ public class CreateFileCommand implements ICommand {
     private void createFile(FileSystem fs, DataInfo fileInfo) {
         int[] filePositions = findPlace(fs, fileInfo);  // Ищем сегмент и место в нём для вставки инф. о файле (DataInfo)
         fs.seg.get(filePositions[0]).info.add(filePositions[1], fileInfo);    // Вставляем DataInfo о новом созданном файле в найденную позицию
-        System.out.println("Успех!");  // для отладки
+        System.out.println("Успех!");  // <------для отладки----->
     }
 
 

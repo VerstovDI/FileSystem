@@ -37,7 +37,7 @@ public class DeleteFileCommand implements ICommand {
 
     @Override
     public void ReadParameters(IParameterReader parameter) {
-        this.fileName = ((ReadParameters) parameter).readFilename("Введите имя удяляемого файла  ");
+        this.fileName = ((ReadParameters) parameter).readFileName("Введите имя удяляемого файла  ");
     }
 
 

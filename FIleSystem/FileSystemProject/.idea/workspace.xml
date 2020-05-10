@@ -21,8 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/AddInfo/AddInfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/AddInfo/AddInfoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/DeleteFile/DeleteFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/DeleteFile/DeleteFileCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/DataInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/DataInfo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +152,7 @@
       <workItem from="1588756797590" duration="7257000" />
       <workItem from="1588778120139" duration="9000" />
       <workItem from="1588865005113" duration="282000" />
-      <workItem from="1589098952657" duration="508000" />
+      <workItem from="1589098952657" duration="1466000" />
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
