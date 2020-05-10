@@ -1,6 +1,5 @@
 package Structure.Main;
 
-
 import Functions.AddInfo.AddInfoCommand;
 import Functions.CreateFile.CreateFileCommand;
 import Functions.DeleteFile.DeleteFileCommand;
