@@ -1,14 +1,14 @@
 package Structure.Main;
 
-//import Functions.AddInfo.AddInfoCommand;
-//import Functions.AddInfo.AddInfoParameters;
 
+import Functions.AddInfo.AddInfoCommand;
+import Functions.AddInfo.AddInfoParameters;
 import Functions.CreateFile.CreateFileCommand;
 import Functions.CreateFile.CreateFileParameters;
 import Functions.DeleteFile.DeleteFileCommand;
+import Functions.ParameterReaders.ReadParameters;
 import Structure.FileSystemStructure.FileSystem;
 import Structure.FileSystemStructure.IMessageWriter;
-import Functions.ParameterReaders.ReadParameters;
 
 
 public class tester {
@@ -33,13 +33,14 @@ public class tester {
             fileCommand.Execute(newFileSystem, fileParameters, imw);
         }
 
-        // отладка удаления файла
+        // Отладка удаления файла
         DeleteFileCommand delFileCommand = new DeleteFileCommand();
         ReadParameters delFileParameters = new ReadParameters();
         for (int i = 0; i < 4; i++) {
             delFileCommand.Execute(newFileSystem, delFileParameters, imw);
         }
         delFileCommand.Execute(newFileSystem, delFileParameters, imw);
+
         // Отладка создания файла (текущий сегмент полон, создаём новый, добавляем в него, прерасчитываем head)
         fileCommand.Execute(newFileSystem, fileParameters, imw);
 
@@ -47,12 +48,11 @@ public class tester {
         for (int i = 0; i < 2; i++) {
             fileCommand.Execute(newFileSystem, fileParameters, imw);
         }
-/*
+
         // Отладка добавление информации в файл
         AddInfoCommand addInfoCommand = new AddInfoCommand();
         AddInfoParameters addInfoParameters = new AddInfoParameters();
         addInfoCommand.Execute(newFileSystem, addInfoParameters, imw);
-    */
     }
 
 }
