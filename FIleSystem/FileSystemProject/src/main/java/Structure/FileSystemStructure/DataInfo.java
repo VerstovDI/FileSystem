@@ -16,6 +16,9 @@ public class DataInfo {
         //this.typeFile = typeFile;
     }
 
+    public DataInfo() {
+    }
+
     public int[] getDate() {
         return date;
     }

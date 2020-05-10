@@ -21,7 +21,20 @@
   <component name="ChangeListManager">
     <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileParameters.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Functions/DeleteFile/DeleteFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/DeleteFile/DeleteFileCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/FindPlace/FindPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/FindPlace/FindPlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/DataInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/DataInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileParameters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/DataInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/DataInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +162,7 @@
       <workItem from="1588756797590" duration="7257000" />
       <workItem from="1588778120139" duration="9000" />
       <workItem from="1588865005113" duration="282000" />
-      <workItem from="1589098952657" duration="2684000" />
+      <workItem from="1589098952657" duration="5004000" />
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
@@ -203,38 +216,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588762187194" />
-    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1588764430432">
+    <state width="1877" height="393" key="GridCell.Tab.0.bottom" timestamp="1589103955342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1588764430432">
+    <state width="1877" height="393" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955342" />
+    <state width="1877" height="393" key="GridCell.Tab.0.center" timestamp="1589103955341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1588764430432">
+    <state width="1877" height="393" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955341" />
+    <state width="1877" height="393" key="GridCell.Tab.0.left" timestamp="1589103955341">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1588764430432">
+    <state width="1877" height="393" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955341" />
+    <state width="1877" height="393" key="GridCell.Tab.0.right" timestamp="1589103955342">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1588764430433">
+    <state width="1877" height="393" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955342" />
+    <state width="1877" height="393" key="GridCell.Tab.1.bottom" timestamp="1589103955565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430433" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1588764430432">
+    <state width="1877" height="393" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
+    <state width="1877" height="393" key="GridCell.Tab.1.center" timestamp="1589103955565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1588764430432">
+    <state width="1877" height="393" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
+    <state width="1877" height="393" key="GridCell.Tab.1.left" timestamp="1589103955565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1588764430433">
+    <state width="1877" height="393" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
+    <state width="1877" height="393" key="GridCell.Tab.1.right" timestamp="1589103955565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430433" />
+    <state width="1877" height="393" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
     <state x="324" y="165" width="998" height="715" key="SettingsEditor" timestamp="1588428002380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -265,13 +278,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Structure/Main/tester.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="9" />
+          <line>54</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Structure/Main/tester.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="10" />
+          <line>26</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

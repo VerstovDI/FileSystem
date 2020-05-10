@@ -3,6 +3,8 @@ package Functions.ParameterReaders;
 import Structure.FileSystemStructure.DataInfo;
 import Structure.FileSystemStructure.IParameterReader;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class ReadParameters implements IParameterReader {
@@ -35,6 +37,19 @@ public class ReadParameters implements IParameterReader {
             fileSize = in.nextInt();
         } while (!checkFileName(fileSize));
         return fileSize;
+    }
+
+    // Функция получения текущей даты (дата создания файла) в формате [dd, mm, yyyy] - массив int
+    public static int[] getCurrentDate() {
+        int[] creationDate = new int[3];
+        Date dateNow = new Date();
+        SimpleDateFormat formatForDateNow = new SimpleDateFormat("d.M.y");
+        String dateString = formatForDateNow.format(dateNow);
+        String[] parsedDateStrings = dateString.split("\\.");
+        for (int i = 0; i < parsedDateStrings.length; i++) {
+            creationDate[i] = Integer.parseInt(parsedDateStrings[i]);
+        }
+        return creationDate;
     }
 
     // Проверка корректности имени файла

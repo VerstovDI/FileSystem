@@ -33,4 +33,18 @@ public class FindPlace {
         }
         return newFilePosition;
     }*/
+
+    // Функция из AddInfoCommand. Надо совместить то, что выше с этим.
+    /*private AddInfoCommand.FilePlace findFile(FileSystem fs, DataInfo fileInfo) {
+        for (int i = 0; i < fs.seg.size() ; i++) {
+            Segment segment = fs.seg.get(i);
+            for (int j = 0; j < segment.info.size() ;j++) {
+                DataInfo dataInfo = segment.info.get(j);
+                if (dataInfo != null && dataInfo.getNameFile().equals(params.fileInfo.getNameFile())) {
+                    return new AddInfoCommand.FilePlace(i,j);
+                }
+            }
+        }
+        return null;
+    }*/
 }

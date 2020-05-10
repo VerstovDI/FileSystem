@@ -6,7 +6,7 @@ import Structure.FileSystemStructure.*;
 public class DeleteFileCommand implements ICommand {
     private String fileName;
 
-    // вспомогательный класс для нахождения места вставки. Потом вынесем.
+    // Вспомогательный класс для нахождения места вставки. Потом вынесем.
 
     class FilePlace {
         private int numberSegment;
@@ -30,14 +30,14 @@ public class DeleteFileCommand implements ICommand {
             rewriteSizeDown(filePlace.numberRecord, segment, dataInfo);
             rewriteSizeUp(filePlace.numberRecord, segment);
         } else {
-            System.out.println("Нет такого файла");
+            System.out.println("Такого файла не существует!");
         }
         message.write();
     }
 
     @Override
     public void ReadParameters(IParameterReader parameter) {
-        this.fileName = ((ReadParameters) parameter).readFileName("Введите имя удаляемого файла  ");
+        this.fileName = ((ReadParameters) parameter).readFileName("Введите имя удаляемого файла:  ");
     }
 
 
