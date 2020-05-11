@@ -1,5 +1,9 @@
 package Functions.FindPlace;
 
+import Structure.FileSystemStructure.DataInfo;
+import Structure.FileSystemStructure.FileSystem;
+import Structure.FileSystemStructure.Segment;
+
 public class FindPlace {
     private int numberOfSegment;
     private int numberOfRecord;
@@ -7,6 +11,28 @@ public class FindPlace {
     private FindPlace(int numberSegment, int numberRecord) {
         this.numberOfRecord = numberRecord;
         this.numberOfSegment = numberSegment;
+    }
+
+    public int getNumberOfSegment() {
+        return this.numberOfSegment;
+    }
+
+    public int getNumberOfRecord() {
+        return this.numberOfRecord;
+    }
+
+    //функция поиска файла по имени. возвращает место файла, или null. используется в DeleteFile
+    public static FindPlace findFile(FileSystem fs, String fileName) {
+        for (int i = 0; i < fs.seg.size(); i++) {
+            Segment segment = fs.seg.get(i);
+            for (int j = 0; j < segment.info.size(); j++) {
+                DataInfo dataInfo = segment.info.get(j);
+                if (dataInfo != null && dataInfo.getNameFile().equals(fileName) && dataInfo.getTypeNote() != 0) {
+                    return new FindPlace(i, j);
+                }
+            }
+        }
+        return null;
     }
 
     // Функция поиска места. Сначала её нужно доработать и разобраться с инициализацией пустых сегментов массива.
