@@ -1,6 +1,9 @@
 package Structure.FileSystemStructure;
 
-public class DataInfo {
+import java.io.Serializable;
+import java.util.Arrays;
+
+public class DataInfo implements Serializable{
     public static int fileNameLengthLimit = 63;     // Ограничение на длину имени файла (в символах)
     private int[] date;          // Дата создания файла [число, месяц, год] - массив int
     private String nameFile;     // Имя файла String, 1 <= length() <= fileNameLengthLimit
@@ -53,5 +56,10 @@ public class DataInfo {
 
     public void setTypeNote(int typeNote) {
         this.typeNote = typeNote;
+    }
+
+    @Override
+    public String  toString (){
+        return "date:"+ Arrays.toString(date)+"\nnameFile:"+nameFile+"\nsize:"+size+"\ntypeNote:"+typeNote;
     }
 }
