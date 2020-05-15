@@ -42,7 +42,7 @@ public class CreateFSParameters implements IParameterReader {
 
     }
 
-    CreateFSParameters(int size, String systemName, String ownerName, int tomId, int version) {
+    public CreateFSParameters(int size, String systemName, String ownerName, int tomId, int version) {
         this.systemName = systemName;
         this.ownerName = ownerName;
         this.tomId = tomId;
