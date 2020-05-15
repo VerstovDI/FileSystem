@@ -19,27 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2020_11_23__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2020_11_23__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand$FilePlace.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand$FilePlace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DownloadFS/DownloadFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/DownloadFS/DownloadFSCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/FindPlace/FindPlace.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/FindPlace/FindPlace.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/SaveFS/SaveFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/SaveFS/SaveFSCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/FileSystemProject.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/DataInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/DataInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/Segment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/Segment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-    </list>
+    <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +54,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
@@ -193,6 +173,7 @@
       <workItem from="1588865005113" duration="282000" />
       <workItem from="1589098952657" duration="5004000" />
       <workItem from="1589460249268" duration="4169000" />
+      <workItem from="1589530616760" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
@@ -282,10 +263,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="393" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
-    <state x="324" y="165" width="998" height="715" key="SettingsEditor" timestamp="1588428002380">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="231" y="145" width="751" height="546" key="SettingsEditor" timestamp="1589530643432">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="324" y="165" width="998" height="715" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588428002380" />
+    <state x="231" y="145" width="751" height="546" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1589530643432" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588762974980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
