@@ -13,7 +13,7 @@ public class CreateFSCommand implements ICommand {
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {
         ReadParameters(parameter);
         FileSystem buf = new FileSystem(par.size, par.systemName, par.ownerName, par.tomId, par.version);
-        fs = buf;
+        fs.copy(buf); //Позволил себе изменить
     }
 
     @Override
