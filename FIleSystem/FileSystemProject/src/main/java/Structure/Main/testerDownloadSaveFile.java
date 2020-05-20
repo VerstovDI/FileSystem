@@ -19,9 +19,10 @@ public class testerDownloadSaveFile {
         // Отладка создания файла (создание файла в пустой ФС)
         CreateFileCommand fileCommand = new CreateFileCommand();
         IMessageWriter imw = new IMessageWriter() {
+            String message1 ="заглушка";
             @Override
-            public void write() {
-                System.out.println("заглушка");
+            public void write(String message) {
+                System.out.println(message1);
             }
         };
         ReadParameters fileCreationParameters = new ReadParameters();
@@ -32,23 +33,29 @@ public class testerDownloadSaveFile {
             fileCommand.Execute(newFileSystem, fileCreationParameters, imw);
         }
 
+
+        //  удалениe файла
+        IMessageWriter imw1 = new IMessageWriter() {
+            @Override
+            public void write(String message) {
+                System.out.println(message);
+            }
+        };
+        DeleteFileCommand delFileCommand = new DeleteFileCommand();
+        ReadParameters delFileParameters = new ReadParameters();
+        for (int i = 0; i < 3; i++) {
+            delFileCommand.Execute(newFileSystem, delFileParameters, imw1);
+        }
         //Сохранение
         SaveFSCommand saveFSCommand= new SaveFSCommand();
         saveFSCommand.Execute(newFileSystem,fileCreationParameters,imw);
 
-        //  удалениe файла
-        DeleteFileCommand delFileCommand = new DeleteFileCommand();
-        ReadParameters delFileParameters = new ReadParameters();
-        for (int i = 0; i < 1; i++) {
-            delFileCommand.Execute(newFileSystem, delFileParameters, imw);
-        }
-        delFileCommand.Execute(newFileSystem, delFileParameters, imw);
 
         //Загрузка
         FileSystem afterload = new FileSystem(4, "MyFileSystem", "Nasvai", 2, 3);
         DownloadFSCommand downloadFSCommand = new DownloadFSCommand();
         downloadFSCommand.Execute(afterload,fileCreationParameters,imw);
 
-        delFileCommand.Execute(newFileSystem, delFileParameters, imw);
+        delFileCommand.Execute(newFileSystem, delFileParameters, imw1);
     }
 }

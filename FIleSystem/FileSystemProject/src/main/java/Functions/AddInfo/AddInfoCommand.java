@@ -26,7 +26,7 @@ public class AddInfoCommand implements ICommand {
         } else {
             System.out.println("Такого файла не существует!");
         }
-        message.write();
+       // message.write();
     }
 
     @Override

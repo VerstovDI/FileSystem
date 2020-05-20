@@ -17,9 +17,10 @@ public class tester {
         // Отладка создания файла (создание файла в пустой ФС)
         CreateFileCommand fileCommand = new CreateFileCommand();
         IMessageWriter imw = new IMessageWriter() {
+            String message1 ="заглушка";
             @Override
-            public void write() {
-                System.out.println("заглушка");
+            public void write(String message) {
+                System.out.println(message1);
             }
         };
         ReadParameters fileCreationParameters = new ReadParameters();
@@ -31,12 +32,18 @@ public class tester {
         }
 
         // Отладка удаления файла
+        IMessageWriter imw1 = new IMessageWriter() {
+            @Override
+            public void write(String message) {
+                System.out.println(message);
+            }
+        };
         DeleteFileCommand delFileCommand = new DeleteFileCommand();
         ReadParameters delFileParameters = new ReadParameters();
         for (int i = 0; i < 4; i++) {
-            delFileCommand.Execute(newFileSystem, delFileParameters, imw);
+            delFileCommand.Execute(newFileSystem, delFileParameters, imw1);
         }
-        delFileCommand.Execute(newFileSystem, delFileParameters, imw);
+        delFileCommand.Execute(newFileSystem, delFileParameters, imw1);
 
         // Отладка создания файла (текущий сегмент полон, создаём новый, добавляем в него, прерасчитываем head)
         fileCommand.Execute(newFileSystem, fileCreationParameters, imw);
