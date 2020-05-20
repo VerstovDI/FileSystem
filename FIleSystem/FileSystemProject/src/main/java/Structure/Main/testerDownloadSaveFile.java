@@ -1,10 +1,9 @@
 package Structure.Main;
 
 import Functions.CreateFile.CreateFileCommand;
+import Functions.Defragmentation.DefragmentationCommand;
 import Functions.DeleteFile.DeleteFileCommand;
-import Functions.DownloadFS.DownloadFSCommand;
 import Functions.ParameterReaders.ReadParameters;
-import Functions.SaveFS.SaveFSCommand;
 import Structure.FileSystemStructure.FileSystem;
 import Structure.FileSystemStructure.IMessageWriter;
 
@@ -27,28 +26,32 @@ public class testerDownloadSaveFile {
         ReadParameters fileCreationParameters = new ReadParameters();
         fileCommand.Execute(newFileSystem, fileCreationParameters, imw);
 
+
         // Отладка создания файла (создание файла в непустой ФС, вставка в непустой сегмент)
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 11; i++) {
             fileCommand.Execute(newFileSystem, fileCreationParameters, imw);
         }
 
         //Сохранение
-        SaveFSCommand saveFSCommand= new SaveFSCommand();
-        saveFSCommand.Execute(newFileSystem,fileCreationParameters,imw);
+       // SaveFSCommand saveFSCommand= new SaveFSCommand();
+       // saveFSCommand.Execute(newFileSystem,fileCreationParameters,imw);
 
         //  удалениe файла
         DeleteFileCommand delFileCommand = new DeleteFileCommand();
         ReadParameters delFileParameters = new ReadParameters();
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < 4; i++) {
             delFileCommand.Execute(newFileSystem, delFileParameters, imw);
         }
         delFileCommand.Execute(newFileSystem, delFileParameters, imw);
 
         //Загрузка
-        FileSystem afterload = new FileSystem(4, "MyFileSystem", "Nasvai", 2, 3);
-        DownloadFSCommand downloadFSCommand = new DownloadFSCommand();
-        downloadFSCommand.Execute(afterload,fileCreationParameters,imw);
+      //  FileSystem afterload = new FileSystem(4, "MyFileSystem", "Nasvai", 2, 3);
+      //  DownloadFSCommand downloadFSCommand = new DownloadFSCommand();
+      //  downloadFSCommand.Execute(afterload,fileCreationParameters,imw);
+        DefragmentationCommand defrag = new DefragmentationCommand();
+        ReadParameters defragParameters = new ReadParameters();
 
-        delFileCommand.Execute(newFileSystem, delFileParameters, imw);
+        defrag.Execute(newFileSystem,defragParameters,imw);
+        //delFileCommand.Execute(newFileSystem, delFileParameters, imw);
     }
 }

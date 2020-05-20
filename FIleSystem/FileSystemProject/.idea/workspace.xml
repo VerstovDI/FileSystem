@@ -20,21 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Functions/Defragmentation/DefragmentationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2020_11_23_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2020_11_23__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileParameters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/DeleteFile/DeleteFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/DeleteFile/DeleteFileCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/FindPlace/FindPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/FindPlace/FindPlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSParameters.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/DataInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/DataInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileParameters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/DataInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/DataInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/Main/testerDownloadSaveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/Main/testerDownloadSaveFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,7 @@
       <recent name="C:\Users\Данила\IdeaProjects\FIleSystem\FileSystemProject\src\main\java\Structure" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.testerDownloadSaveFile">
     <configuration name="tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Structure.Main.tester" />
       <module name="FileSystemProject" />
@@ -91,7 +87,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="testerDownloadSaveFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Structure.Main.testerDownloadSaveFile" />
+      <module name="FileSystemProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Structure.Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="FIleSystem" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -104,7 +113,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <module name="FIleSystem" />
       <option name="filePath" />
       <option name="vmParameters" />
@@ -140,6 +149,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.testerDownloadSaveFile" />
         <item itemvalue="Application.tester" />
       </list>
     </recent_temporary>
@@ -163,6 +173,9 @@
       <workItem from="1588778120139" duration="9000" />
       <workItem from="1588865005113" duration="282000" />
       <workItem from="1589098952657" duration="5004000" />
+      <workItem from="1589402739327" duration="530000" />
+      <workItem from="1589537717114" duration="746000" />
+      <workItem from="1589978450035" duration="16849000" />
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
@@ -175,19 +188,20 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи; 2) Добавил комментирование к нескольким кускам кода; 3) Скорректировал в DataInfo модификаторы доступа; 4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;; 5) Прочие правки" />
@@ -200,54 +214,58 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1588762043302" />
-    <state x="552" y="178" key="#Project_Structure" timestamp="1588424913410">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1589983552637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1588424913410" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1588432282788">
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589983552637" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1589980345932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588432282788" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589980345932" />
+    <state x="900" y="669" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1589402847335">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="900" y="669" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589402847335" />
     <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588427315464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588427315464" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1588762187194">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1589538988723">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588762187194" />
-    <state width="1877" height="393" key="GridCell.Tab.0.bottom" timestamp="1589103955342">
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589538988723" />
+    <state width="1877" height="182" key="GridCell.Tab.0.bottom" timestamp="1589997942272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955342" />
-    <state width="1877" height="393" key="GridCell.Tab.0.center" timestamp="1589103955341">
+    <state width="1877" height="182" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942272" />
+    <state width="1877" height="182" key="GridCell.Tab.0.center" timestamp="1589997942272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955341" />
-    <state width="1877" height="393" key="GridCell.Tab.0.left" timestamp="1589103955341">
+    <state width="1877" height="182" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942272" />
+    <state width="1877" height="182" key="GridCell.Tab.0.left" timestamp="1589997942272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955341" />
-    <state width="1877" height="393" key="GridCell.Tab.0.right" timestamp="1589103955342">
+    <state width="1877" height="182" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942272" />
+    <state width="1877" height="182" key="GridCell.Tab.0.right" timestamp="1589997942272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955342" />
-    <state width="1877" height="393" key="GridCell.Tab.1.bottom" timestamp="1589103955565">
+    <state width="1877" height="182" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942272" />
+    <state width="1877" height="182" key="GridCell.Tab.1.bottom" timestamp="1589997942273">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
-    <state width="1877" height="393" key="GridCell.Tab.1.center" timestamp="1589103955565">
+    <state width="1877" height="182" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942273" />
+    <state width="1877" height="182" key="GridCell.Tab.1.center" timestamp="1589997942273">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
-    <state width="1877" height="393" key="GridCell.Tab.1.left" timestamp="1589103955565">
+    <state width="1877" height="182" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942273" />
+    <state width="1877" height="182" key="GridCell.Tab.1.left" timestamp="1589997942273">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
-    <state width="1877" height="393" key="GridCell.Tab.1.right" timestamp="1589103955565">
+    <state width="1877" height="182" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942273" />
+    <state width="1877" height="182" key="GridCell.Tab.1.right" timestamp="1589997942273">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
+    <state width="1877" height="182" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942273" />
     <state x="324" y="165" width="998" height="715" key="SettingsEditor" timestamp="1588428002380">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -274,20 +292,6 @@
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588762189927" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Structure/Main/tester.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Structure/Main/tester.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo typeName="Structure.FileSystemStructure.Segment" fieldName="info" />
@@ -296,6 +300,7 @@
     <watches-manager>
       <configuration name="Application">
         <watch expression="createFileParams.fileInfo" />
+        <watch expression="fs.seg.get(0)" />
       </configuration>
     </watches-manager>
   </component>
