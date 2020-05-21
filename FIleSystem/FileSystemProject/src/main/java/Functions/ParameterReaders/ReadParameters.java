@@ -69,6 +69,10 @@ public class ReadParameters implements IParameterReader {
         return creationDate;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
     public int readFSSize(String message){
         int size = 0;
         Scanner in = new Scanner(System.in);
@@ -79,11 +83,18 @@ public class ReadParameters implements IParameterReader {
             if (size > 0 && size < 32) {
                 err = false;
 
+<<<<<<< HEAD
             }
         }
         return size;
     }
 
+=======
+        }
+    }
+        return size;
+    }
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
     // Проверка корректности имени файла
     private boolean checkFileName(String fileName) {
         return fileName.length() <= DataInfo.fileNameLengthLimit && fileName.length() > 0;

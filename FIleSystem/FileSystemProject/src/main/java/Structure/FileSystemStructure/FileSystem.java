@@ -1,11 +1,9 @@
 package Structure.FileSystemStructure;
 
-import java.io.PrintWriter;
 import java.io.Serializable;
 import java.util.ArrayList;
 
 public class FileSystem implements Serializable {
-    public static PrintWriter out;
     public String systemName;           // Имя ФС
     public String ownerName;            // Владелец ФС
     public int tomId;                   // ID тома
@@ -22,6 +20,8 @@ public class FileSystem implements Serializable {
         ArrayList<Segment> buf = new ArrayList<Segment>();
         buf.ensureCapacity(size);
         seg = buf;
+    }
+    public FileSystem(){
     }
     @Override
     public String  toString () {

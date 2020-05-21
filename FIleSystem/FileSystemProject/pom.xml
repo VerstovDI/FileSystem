@@ -7,6 +7,7 @@
     <groupId>dev.app.fileSystem</groupId>
     <artifactId>FileSystem_maven</artifactId>
     <version>1.0-SNAPSHOT</version>
+<<<<<<< HEAD
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,6 +17,20 @@
         <junit.platform.version>1.5.2</junit.platform.version>
     </properties>
 
+=======
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

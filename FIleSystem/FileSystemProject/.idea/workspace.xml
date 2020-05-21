@@ -20,12 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/FIleSystem.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/target/classes/META-INF/FileSystemProject.kotlin_module" afterDir="false" />
+=======
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +84,7 @@
       <recent name="C:\Users\Данила\IdeaProjects\FIleSystem\FileSystemProject\src\main\java\Structure" />
     </key>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Application.Program">
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Monitor.program.Program" />
@@ -95,6 +99,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+=======
+  <component name="RunManager" selected="Application.testerDownloadSaveFile">
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
     <configuration name="tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Structure.Main.tester" />
       <module name="FileSystemProject" />
@@ -108,6 +115,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="DataInfoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FileSystemProject" />
       <extension name="coverage">
@@ -119,6 +127,17 @@
       <option name="PACKAGE_NAME" value="Structure.FileSystemStructure" />
       <option name="MAIN_CLASS_NAME" value="Structure.FileSystemStructure.DataInfoTest" />
       <option name="TEST_OBJECT" value="class" />
+=======
+    <configuration name="testerDownloadSaveFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Structure.Main.testerDownloadSaveFile" />
+      <module name="FileSystemProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Structure.Main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -172,8 +191,12 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Application.Program" />
         <item itemvalue="JUnit.DataInfoTest" />
+=======
+        <item itemvalue="Application.testerDownloadSaveFile" />
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
         <item itemvalue="Application.tester" />
       </list>
     </recent_temporary>
@@ -197,11 +220,19 @@
       <workItem from="1588778120139" duration="9000" />
       <workItem from="1588865005113" duration="282000" />
       <workItem from="1589098952657" duration="5004000" />
+<<<<<<< HEAD
       <workItem from="1589460249268" duration="4169000" />
       <workItem from="1589530616760" duration="911000" />
       <workItem from="1589555623355" duration="63000" />
       <workItem from="1589901253660" duration="45000" />
       <workItem from="1590060738599" duration="1826000" />
+=======
+      <workItem from="1589402739327" duration="530000" />
+      <workItem from="1589537717114" duration="746000" />
+      <workItem from="1589978450035" duration="16849000" />
+      <workItem from="1589998563116" duration="623000" />
+      <workItem from="1590043649461" duration="198000" />
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
@@ -210,12 +241,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588762942061</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00002" summary="Defragmentation">
       <created>1590061530463</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1590061530463</updated>
+=======
+    <task id="LOCAL-00002" summary="1) Defragmentation">
+      <created>1590043720699</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590043720699</updated>
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -241,14 +281,20 @@
     <MESSAGE value="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи; 2) Добавил комментирование к нескольким кускам кода; 3) Скорректировал в DataInfo модификаторы доступа; 4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;; 5) Прочие правки" />
     <MESSAGE value="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;2) Добавил комментирование к нескольким кускам кода; 3) Скорректировал в DataInfo модификаторы доступа; 4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;; 5) Прочие правки" />
     <MESSAGE value="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки" />
+<<<<<<< HEAD
     <MESSAGE value="Defragmentation" />
     <option name="LAST_COMMIT_MESSAGE" value="Defragmentation" />
+=======
+    <MESSAGE value="1) Defragmentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="1) Defragmentation" />
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1588762043302">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1588762043302" />
+<<<<<<< HEAD
     <state x="552" y="178" key="#Project_Structure" timestamp="1589460387604">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -299,22 +345,70 @@
     <state width="1284" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589464190921" />
     <state width="1320" height="60" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1589531541476" />
     <state width="1877" height="393" key="GridCell.Tab.1.bottom" timestamp="1589103955565">
+=======
+    <state x="552" y="178" key="#Project_Structure" timestamp="1589983552637">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
-    <state width="1877" height="393" key="GridCell.Tab.1.center" timestamp="1589103955565">
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589983552637" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1589980345932">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
-    <state width="1877" height="393" key="GridCell.Tab.1.left" timestamp="1589103955565">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589980345932" />
+    <state x="900" y="669" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1589402847335">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
-    <state width="1877" height="393" key="GridCell.Tab.1.right" timestamp="1589103955565">
+    <state x="900" y="669" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589402847335" />
+    <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588427315464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588427315464" />
+    <state x="495" y="74" key="CommitChangelistDialog2" timestamp="1590043718782">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="495" y="74" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590043718782" />
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1589538988723">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1589538988723" />
+    <state width="1877" height="182" key="GridCell.Tab.0.bottom" timestamp="1589997942272">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942272" />
+    <state width="1877" height="182" key="GridCell.Tab.0.center" timestamp="1589997942272">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942272" />
+    <state width="1877" height="182" key="GridCell.Tab.0.left" timestamp="1589997942272">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942272" />
+    <state width="1877" height="182" key="GridCell.Tab.0.right" timestamp="1589997942272">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942272" />
+    <state width="1877" height="182" key="GridCell.Tab.1.bottom" timestamp="1589997942273">
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942273" />
+    <state width="1877" height="182" key="GridCell.Tab.1.center" timestamp="1589997942273">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942273" />
+    <state width="1877" height="182" key="GridCell.Tab.1.left" timestamp="1589997942273">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="182" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942273" />
+    <state width="1877" height="182" key="GridCell.Tab.1.right" timestamp="1589997942273">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+<<<<<<< HEAD
     <state width="1877" height="393" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
     <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1590061226004">
+=======
+    <state width="1877" height="182" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589997942273" />
+    <state x="324" y="165" width="998" height="715" key="SettingsEditor" timestamp="1588428002380">
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590061226004" />
@@ -349,6 +443,7 @@
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588762189927" />
   </component>
   <component name="XDebuggerManager">
+<<<<<<< HEAD
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
@@ -368,6 +463,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+=======
+>>>>>>> 327bf19168ea33a7b6b79d3aac8c00cdea7b303c
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo typeName="Structure.FileSystemStructure.Segment" fieldName="info" />
@@ -376,6 +473,7 @@
     <watches-manager>
       <configuration name="Application">
         <watch expression="createFileParams.fileInfo" />
+        <watch expression="fs.seg.get(0)" />
       </configuration>
     </watches-manager>
   </component>
