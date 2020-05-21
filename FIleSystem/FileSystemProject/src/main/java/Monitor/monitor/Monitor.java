@@ -2,7 +2,6 @@ package Monitor.monitor;
 
 import Functions.AddInfo.AddInfoCommand;
 import Functions.CreateFS.CreateFSCommand;
-import Functions.CreateFS.CreateFSParameters;
 import Functions.CreateFile.CreateFileCommand;
 import Functions.DeleteFile.DeleteFileCommand;
 import Functions.DownloadFS.DownloadFSCommand;
@@ -40,8 +39,7 @@ public class Monitor {
 
     public void create(){
         CreateFSCommand newFS = new CreateFSCommand();
-        IParameterReader newFSPar = new CreateFSParameters(0,
-                "", "", 0, 0);
+        IParameterReader newFSPar = new ReadParameters();
         IMessageWriter imw = new IMessageWriter() {
             String message ="заглушка";
             @Override
