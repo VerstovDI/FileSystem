@@ -10,6 +10,7 @@ public interface IParameterReader {
 
     public  String readInfo (String message,int fileSize);
 
+    public int readFSSize(String message);
 
 
 }

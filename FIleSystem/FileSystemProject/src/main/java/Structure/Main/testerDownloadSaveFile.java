@@ -1,6 +1,7 @@
 package Structure.Main;
 
 import Functions.CreateFile.CreateFileCommand;
+import Functions.Defragmentation.DefragmentationCommand;
 import Functions.DeleteFile.DeleteFileCommand;
 import Functions.DownloadFS.DownloadFSCommand;
 import Functions.ParameterReaders.ReadParameters;
@@ -43,9 +44,14 @@ public class testerDownloadSaveFile {
         };
         DeleteFileCommand delFileCommand = new DeleteFileCommand();
         ReadParameters delFileParameters = new ReadParameters();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < 5; i++) {
             delFileCommand.Execute(newFileSystem, delFileParameters, imw1);
         }
+
+        DefragmentationCommand defrag = new DefragmentationCommand();
+        ReadParameters defragParameters = new ReadParameters();
+        defrag.Execute(newFileSystem,defragParameters,imw);
+
         //Сохранение
         SaveFSCommand saveFSCommand= new SaveFSCommand();
         saveFSCommand.Execute(newFileSystem,fileCreationParameters,imw);
