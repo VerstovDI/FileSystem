@@ -20,17 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Functions/Defragmentation/DefragmentationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2020_11_23_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2020_11_23__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSParameters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/Main/testerDownloadSaveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/Main/testerDownloadSaveFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,6 +166,7 @@
       <workItem from="1589402739327" duration="530000" />
       <workItem from="1589537717114" duration="746000" />
       <workItem from="1589978450035" duration="16849000" />
+      <workItem from="1589998563116" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
