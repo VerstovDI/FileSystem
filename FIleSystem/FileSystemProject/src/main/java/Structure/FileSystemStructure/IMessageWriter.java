@@ -1,5 +1,5 @@
 package Structure.FileSystemStructure;
 
 public interface IMessageWriter {
-    void write();//под вопросом
+    void write(String Message);//под вопросом
 }

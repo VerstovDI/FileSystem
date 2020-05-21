@@ -18,6 +18,7 @@ public class ReadParameters implements IParameterReader {
     // Считываем имя файлы.
     // message - это текст запроса, который выведется на консоль
     // Функция, выполняющая проверку имени файла на длину. Вовзвращает введённое имя в случае успеха.
+    @Override
     public String readFileName(String message) {
         Scanner in = new Scanner(System.in);
         String fileName;
@@ -29,6 +30,7 @@ public class ReadParameters implements IParameterReader {
     }
 
     // Функция, выполняющая проверку размера файла. Вовзвращает введённый размер в случае успеха.
+    @Override
     public int readFileSize(String message) {
         Scanner in = new Scanner(System.in);
         int fileSize;
@@ -42,6 +44,7 @@ public class ReadParameters implements IParameterReader {
     /*
     Считывание информации для добавления в файл. Поскольку самих файлов в ФС нет, то сохранять текст бессмысленно
      */
+    @Override
     public  String readInfo (String message,int fileSize) {
         StringBuilder info = new StringBuilder();
         Scanner in = new Scanner(System.in);
@@ -53,6 +56,7 @@ public class ReadParameters implements IParameterReader {
     }
 
     // Функция получения текущей даты (дата создания файла) в формате [dd, mm, yyyy] - массив int
+    //перенести в интерфейс
     public static int[] getCurrentDate() {
         int[] creationDate = new int[3];
         Date dateNow = new Date();

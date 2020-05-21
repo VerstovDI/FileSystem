@@ -1,7 +1,6 @@
 package Functions.DeleteFile;
 
 import Functions.FindPlace.FindPlace;
-import Functions.ParameterReaders.ReadParameters;
 import Structure.FileSystemStructure.*;
 
 import static Functions.FindPlace.FindPlace.findFile;
@@ -15,21 +14,21 @@ public class DeleteFileCommand implements ICommand {
         this.ReadParameters(parameter);
         FindPlace filePlace = findFile(fs, fileName);
         if (filePlace != null) {
-            System.out.println(" удаляем файл  " + fileName);
+            message.write("файл "+ fileName+ " найден, удаляем  " );
             Segment segment = fs.seg.get(filePlace.getNumberOfSegment());
             DataInfo dataInfo = segment.info.get(filePlace.getNumberOfRecord());
             dataInfo.setTypeNote(0);
             rewriteSizeDown(filePlace.getNumberOfRecord(), segment, dataInfo);
             rewriteSizeUp(filePlace.getNumberOfRecord(), segment);
         } else {
-            System.out.println("Такого файла не существует!");
+            message.write("Такого файла не существует!");
         }
-        message.write();
+
     }
 
     @Override
     public void ReadParameters(IParameterReader parameter) {
-        this.fileName = ((ReadParameters) parameter).readFileName("Введите имя удаляемого файла:  ");
+        this.fileName =  parameter.readFileName("Введите имя удаляемого файла:  ");
     }
 
 

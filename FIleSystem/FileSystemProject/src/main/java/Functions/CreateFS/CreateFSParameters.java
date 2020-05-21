@@ -42,6 +42,21 @@ public class CreateFSParameters implements IParameterReader {
 
     }
 
+    @Override
+    public String readFileName(String message) {
+        return null;
+    }
+
+    @Override
+    public int readFileSize(String message) {
+        return 0;
+    }
+
+    @Override
+    public String readInfo(String message, int fileSize) {
+        return null;
+    }
+
     public CreateFSParameters(int size, String systemName, String ownerName, int tomId, int version) {
         this.systemName = systemName;
         this.ownerName = ownerName;

@@ -9,6 +9,7 @@ import Functions.DownloadFS.DownloadFSCommand;
 import Functions.ParameterReaders.ReadParameters;
 import Functions.SaveFS.SaveFSCommand;
 import Structure.FileSystemStructure.FileSystem;
+import Structure.FileSystemStructure.IMessageWriter;
 import Structure.FileSystemStructure.IParameterReader;
 import java.io.BufferedReader;
 import java.io.File;
@@ -27,16 +28,28 @@ public class Monitor {
     public void download(){
         DownloadFSCommand downloadFS = new DownloadFSCommand();
         IParameterReader ipr = new ReadParameters();
-        downloadFS.Execute(fs, ipr, () -> {
-        });
+        IMessageWriter imw = new IMessageWriter() {
+            String message ="заглушка";
+            @Override
+            public void write(String message) {
+                System.out.println(message);
+            }
+        };
+        downloadFS.Execute(fs, ipr, imw);
     }
 
     public void create(){
         CreateFSCommand newFS = new CreateFSCommand();
         IParameterReader newFSPar = new CreateFSParameters(0,
                 "", "", 0, 0);
-        newFS.Execute(fs, newFSPar, () -> {
-        });
+        IMessageWriter imw = new IMessageWriter() {
+            String message ="заглушка";
+            @Override
+            public void write(String message) {
+                System.out.println(message);
+            }
+        };
+        newFS.Execute(fs, newFSPar, imw);
     }
 
     public void help() throws IOException {
@@ -51,28 +64,52 @@ public class Monitor {
     public void file(){
         CreateFileCommand cfc = new CreateFileCommand();
         IParameterReader ipr = new ReadParameters();
-        cfc.Execute(fs, ipr, () -> {
-        });
+        IMessageWriter imw = new IMessageWriter() {
+            String message ="заглушка";
+            @Override
+            public void write(String message) {
+                System.out.println(message);
+            }
+        };
+        cfc.Execute(fs, ipr, imw);
     }
 
     public void delete(){
         DeleteFileCommand dfc = new DeleteFileCommand();
         IParameterReader ipr = new ReadParameters();
-        dfc.Execute(fs, ipr, () -> {
-        });
+        IMessageWriter imw = new IMessageWriter() {
+            String message ="заглушка";
+            @Override
+            public void write(String message) {
+                System.out.println(message);
+            }
+        };
+        dfc.Execute(fs, ipr, imw);
     }
 
     public void save(){
         SaveFSCommand sfc = new SaveFSCommand();
         IParameterReader ipr = new ReadParameters();
-        sfc.Execute(fs, ipr, () -> {
-        });
+        IMessageWriter imw = new IMessageWriter() {
+            String message ="заглушка";
+            @Override
+            public void write(String message) {
+                System.out.println(message);
+            }
+        };
+        sfc.Execute(fs, ipr, imw);
     }
 
     public void add(){
         AddInfoCommand aic = new AddInfoCommand();
         IParameterReader ipr = new ReadParameters();
-        aic.Execute(fs, ipr, () -> {
-        });
+        IMessageWriter imw = new IMessageWriter() {
+            String message ="заглушка";
+            @Override
+            public void write(String message) {
+                System.out.println(message);
+            }
+        };
+        aic.Execute(fs, ipr, imw);
     }
 }
