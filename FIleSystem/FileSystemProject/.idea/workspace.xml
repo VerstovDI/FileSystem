@@ -19,34 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Functions/Defragmentation/DefragmentationCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/FIleSystem.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/FileSystemProject.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSParameters.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/Main/testerDownloadSaveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/Main/testerDownloadSaveFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand$FilePlace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSParameters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DownloadFS/DownloadFSCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/FindPlace/FindPlace.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/SaveFS/SaveFSCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/DataInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/ICommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IMessageWriter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IParameterReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/Segment.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +201,7 @@
       <workItem from="1589530616760" duration="911000" />
       <workItem from="1589555623355" duration="63000" />
       <workItem from="1589901253660" duration="45000" />
-      <workItem from="1590060738599" duration="756000" />
+      <workItem from="1590060738599" duration="1826000" />
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
@@ -230,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588762942061</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Defragmentation">
+      <created>1590061530463</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1590061530463</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +241,8 @@
     <MESSAGE value="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи; 2) Добавил комментирование к нескольким кускам кода; 3) Скорректировал в DataInfo модификаторы доступа; 4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;; 5) Прочие правки" />
     <MESSAGE value="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;2) Добавил комментирование к нескольким кускам кода; 3) Скорректировал в DataInfo модификаторы доступа; 4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;; 5) Прочие правки" />
     <MESSAGE value="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки" />
-    <option name="LAST_COMMIT_MESSAGE" value="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки" />
+    <MESSAGE value="Defragmentation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Defragmentation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1588762043302">
@@ -281,10 +269,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588427315464" />
-    <state x="503" y="74" key="CommitChangelistDialog2" timestamp="1590060804484">
+    <state x="503" y="74" key="CommitChangelistDialog2" timestamp="1590061528743">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="503" y="74" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590060804484" />
+    <state x="503" y="74" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590061528743" />
     <state x="740" y="261" width="424" height="491" key="FileChooserDialogImpl" timestamp="1590061398934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -335,10 +323,10 @@
     </state>
     <state x="324" y="165" width="998" height="715" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588428002380" />
     <state x="231" y="145" width="751" height="546" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1589530643432" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588762974980">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590062206118">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588762974980" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590062206118" />
     <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1588428766008">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
