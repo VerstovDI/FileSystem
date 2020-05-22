@@ -5,33 +5,28 @@ import Structure.FileSystemStructure.*;
 
 
 public class CreateFileCommand implements ICommand {
-    //CreateFileParameters params; // Ссылка на экземляр класса, реализующего интерфейс IParameterReader и содержащего ссылку на DataInfo.
     DataInfo dataInfoOfCreatingFile;  // Ссылка на новый DataInfo создаваемого файла
-
-   /* public CreateFileCommand(String fileName, int fileSize) {
-        this.fileName = fileName;
-        this.fileSize = fileSize;
-    }*/
 
     @Override
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {
         this.ReadParameters(parameter);
         createFile(fs, this.dataInfoOfCreatingFile);
+        // message.write("Успех");
     }
 
     @Override
     public void ReadParameters(IParameterReader p) {
         this.dataInfoOfCreatingFile = new DataInfo();
         this.dataInfoOfCreatingFile.setDate(ReadParameters.getCurrentDate());
-        this.dataInfoOfCreatingFile.setNameFile(((ReadParameters) p).readFileName("Введите имя создаваемого файла: "));
-        this.dataInfoOfCreatingFile.setSize(((ReadParameters) p).readFileSize("Введите размер создаваемого файла:  "));
+        this.dataInfoOfCreatingFile.setNameFile(p.readFileName("Введите имя создаваемого файла: "));
+        this.dataInfoOfCreatingFile.setSize(p.readFileSize("Введите размер создаваемого файла:  "));
         this.dataInfoOfCreatingFile.setTypeNote(1);
     }
 
     private void createFile(FileSystem fs, DataInfo fileInfo) {
         int[] filePositions = findPlace(fs, fileInfo);  // Ищем сегмент и место в нём для вставки инф. о файле (DataInfo)
         fs.seg.get(filePositions[0]).info.add(filePositions[1], fileInfo);    // Вставляем DataInfo о новом созданном файле в найденную позицию
-        System.out.println("Успех!");  // <------для отладки----->
+        // System.out.println("Успех!");  // <------для отладки----->
     }
 
 
@@ -65,15 +60,15 @@ public class CreateFileCommand implements ICommand {
     }
 
     // Функция подсчёта размера всех файлов сегмента
-    private int segmentFilesSize(Segment segm) {
-        int sz = 0;
-        for (DataInfo di : segm.info) {
-            sz += di.getSize();
+    private int segmentFilesSize(Segment segment) {
+        int size = 0;
+        for (DataInfo di : segment.info) {
+            size += di.getSize();
         }
-        return sz;
+        return size;
     }
 
-    // Функция добавления сегмента [пока не дописана]
+    // Функция добавления сегмента
     private void addSegment(FileSystem fs, int head) {
         fs.seg.add(new Segment(head));
         if (Segment.counter == 0) {

@@ -1,6 +1,7 @@
 package Functions.ParameterReaders;
 
 import Structure.FileSystemStructure.DataInfo;
+import Structure.FileSystemStructure.FileSystem;
 import Structure.FileSystemStructure.IParameterReader;
 
 import java.text.SimpleDateFormat;
@@ -14,10 +15,9 @@ public class ReadParameters implements IParameterReader {
         return null;
     }
 
-    //@Override
-    // Считываем имя файлы.
+    // Считываем имя файла.
     // message - это текст запроса, который выведется на консоль
-    // Функция, выполняющая проверку имени файла на длину. Вовзвращает введённое имя в случае успеха.
+    // Функция, выполняющая проверку имени файла на длину. Возвращает введённое имя в случае успеха.
     @Override
     public String readFileName(String message) {
         Scanner in = new Scanner(System.in);
@@ -33,30 +33,41 @@ public class ReadParameters implements IParameterReader {
     @Override
     public int readFileSize(String message) {
         Scanner in = new Scanner(System.in);
-        int fileSize;
+        int fileSize = -1;
+        String errMessageNotANumber = "Введено не число!";
+        String errMessageIncorrectNumber = "Введённое число не удовлетворяет условиям на размер файла!";
+        boolean checkFileSizeFunctionFlag = false;  // Флаг для корректного вывода сообщения об ошибке в случае, когда checkFileSize вернёт false
         do {
+            if (checkFileSizeFunctionFlag)
+            {
+                System.out.println(errMessageIncorrectNumber);
+            }
             System.out.format(message);
-            fileSize = in.nextInt();
+            checkFileSizeFunctionFlag = true;
+            try {
+                fileSize = Integer.parseInt(in.nextLine());
+            } catch (NumberFormatException e) {
+                checkFileSizeFunctionFlag = false;
+                System.out.println(errMessageNotANumber);
+            }
         } while (!checkFileSize(fileSize));
         return fileSize;
     }
 
-    /*
-    Считывание информации для добавления в файл. Поскольку самих файлов в ФС нет, то сохранять текст бессмысленно
-     */
+    // Считывание информации для добавления в файл. Поскольку самих файлов в ФС нет, то сохранять текст бессмысленно
     @Override
-    public  String readInfo (String message,int fileSize) {
+    public String readInfo (String message, int fileSize) {
         StringBuilder info = new StringBuilder();
         Scanner in = new Scanner(System.in);
         System.out.format(message);
         do {
-            info.append( in.nextLine());
+            info.append(in.nextLine());
         } while (checkInfoSize(info,fileSize));
         return info.toString().substring(0,fileSize);
     }
 
     // Функция получения текущей даты (дата создания файла) в формате [dd, mm, yyyy] - массив int
-    //перенести в интерфейс
+    // перенести в интерфейс
     public static int[] getCurrentDate() {
         int[] creationDate = new int[3];
         Date dateNow = new Date();
@@ -68,6 +79,7 @@ public class ReadParameters implements IParameterReader {
         }
         return creationDate;
     }
+
     @Override
     public int readFSSize(String message){
         int size = 0;
@@ -78,7 +90,6 @@ public class ReadParameters implements IParameterReader {
             size = in.nextInt();
             if (size > 0 && size < 32) {
                 err = false;
-
             }
         }
         return size;
@@ -91,11 +102,11 @@ public class ReadParameters implements IParameterReader {
 
     // Проверка корректности размера файла
     private boolean checkFileSize(int fileSize) {
-        return fileSize > 0 && fileSize < Integer.MAX_VALUE / 10;
+        return fileSize > 0 && fileSize < FileSystem.fileSystemSize;
     }
 
     //Проверка корректности ввода информации для записи
-    private  boolean checkInfoSize (StringBuilder info, int fileSize) {
+    private boolean checkInfoSize (StringBuilder info, int fileSize) {
         return info.length() < fileSize;
     }
 }
