@@ -20,7 +20,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
+      <change beforePath="$PROJECT_DIR$/../../.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../.github/ISSUE_TEMPLATE/bug_report.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../.github/ISSUE_TEMPLATE/feature_request.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.github/workflows/greetings.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.github/workflows/greetings.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Documentation/TZ.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Documentation/TZ.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Documentation/TZfinal_2.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Documentation/TZfinal_2.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FileSystemProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FileSystemProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2020_11_23_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2020_11_23__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FIleSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FIleSystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/AddInfo/AddInfoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/AddInfo/AddInfoCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/DeleteFile/DeleteFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/DeleteFile/DeleteFileCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/DownloadFS/DownloadFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/DownloadFS/DownloadFSCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/FindPlace/FindPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/FindPlace/FindPlace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/SaveFS/SaveFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/SaveFS/SaveFSCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Monitor/program/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Monitor/program/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Monitor/program/help.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Monitor/program/help.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/DataInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/DataInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/ICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/ICommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IMessageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IMessageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IParameterReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IParameterReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/Segment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/Segment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/Main/testerDownloadSaveFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/Main/testerDownloadSaveFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Structure/FileSystemStructure/DataInfoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Structure/FileSystemStructure/DataInfoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand$FilePlace.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand$FilePlace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSParameters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DownloadFS/DownloadFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/DownloadFS/DownloadFSCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/FindPlace/FindPlace.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/FindPlace/FindPlace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/SaveFS/SaveFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/SaveFS/SaveFSCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/DataInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/DataInfo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/ICommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/ICommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IMessageWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IMessageWriter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IParameterReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IParameterReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/Segment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/Segment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Structure.FileSystemStructure.DataInfoTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Structure.FileSystemStructure.DataInfoTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-Structure.FileSystemStructure.DataInfoTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-Structure.FileSystemStructure.DataInfoTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Structure/FileSystemStructure/DataInfoTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Structure/FileSystemStructure/DataInfoTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Залить.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Залить.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +99,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -52,18 +119,39 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../FileSystem-dev/FIleSystem/FileSystemProject" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Structure.FileSystemStructure" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Данила\IdeaProjects\FIleSystem\FileSystemProject\src\main\java\Structure" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Program">
+    <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Monitor.program.Program" />
+      <module name="FileSystemProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Monitor.program.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Structure.Main.tester" />
       <module name="FileSystemProject" />
@@ -73,6 +161,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataInfoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FileSystemProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Structure.FileSystemStructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Structure.FileSystemStructure" />
+      <option name="MAIN_CLASS_NAME" value="Structure.FileSystemStructure.DataInfoTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,6 +229,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Program" />
+        <item itemvalue="JUnit.DataInfoTest" />
         <item itemvalue="Application.tester" />
       </list>
     </recent_temporary>
@@ -147,6 +252,12 @@
       <workItem from="1588494229810" duration="15519000" />
       <workItem from="1588756797590" duration="7257000" />
       <workItem from="1588778120139" duration="9000" />
+      <workItem from="1588865005113" duration="282000" />
+      <workItem from="1589098952657" duration="5004000" />
+      <workItem from="1589460249268" duration="4169000" />
+      <workItem from="1589530616760" duration="911000" />
+      <workItem from="1589555623355" duration="63000" />
+      <workItem from="1589901253660" duration="45000" />
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
@@ -184,58 +295,68 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="586" y="198" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1588762043302" />
-    <state x="552" y="178" key="#Project_Structure" timestamp="1588424913410">
+    <state x="552" y="178" key="#Project_Structure" timestamp="1589460387604">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1588424913410" />
+    <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589460387604" />
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1588432282788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588432282788" />
+    <state x="690" y="295" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1589460528488">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="295" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589460528488" />
     <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588427315464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588427315464" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1588762187194">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="526" y="213" width="424" height="491" key="FileChooserDialogImpl" timestamp="1589901299602">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588762187194" />
-    <state width="938" height="348" key="GridCell.Tab.0.bottom" timestamp="1588764430432">
+    <state x="526" y="213" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1589901299602" />
+    <state width="1320" height="60" key="GridCell.Tab.0.bottom" timestamp="1589531541478">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1284" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589464190922" />
+    <state width="1320" height="60" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1589531541478" />
+    <state width="1320" height="60" key="GridCell.Tab.0.center" timestamp="1589531541474">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1284" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589464190921" />
+    <state width="1320" height="60" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1589531541474" />
+    <state width="1320" height="60" key="GridCell.Tab.0.left" timestamp="1589531541472">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1284" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589464190921" />
+    <state width="1320" height="60" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1589531541472" />
+    <state width="1320" height="60" key="GridCell.Tab.0.right" timestamp="1589531541476">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state width="1284" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589464190921" />
+    <state width="1320" height="60" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1589531541476" />
+    <state width="1877" height="393" key="GridCell.Tab.1.bottom" timestamp="1589103955565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.0.center" timestamp="1588764430432">
+    <state width="1877" height="393" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
+    <state width="1877" height="393" key="GridCell.Tab.1.center" timestamp="1589103955565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.0.left" timestamp="1588764430432">
+    <state width="1877" height="393" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
+    <state width="1877" height="393" key="GridCell.Tab.1.left" timestamp="1589103955565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.0.right" timestamp="1588764430432">
+    <state width="1877" height="393" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
+    <state width="1877" height="393" key="GridCell.Tab.1.right" timestamp="1589103955565">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="938" height="348" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.1.bottom" timestamp="1588764430433">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430433" />
-    <state width="938" height="348" key="GridCell.Tab.1.center" timestamp="1588764430432">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.1.left" timestamp="1588764430432">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430432" />
-    <state width="938" height="348" key="GridCell.Tab.1.right" timestamp="1588764430433">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="938" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588764430433" />
-    <state x="324" y="165" width="998" height="715" key="SettingsEditor" timestamp="1588428002380">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1877" height="393" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589103955565" />
+    <state x="231" y="145" width="751" height="546" key="SettingsEditor" timestamp="1589530643432">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="324" y="165" width="998" height="715" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588428002380" />
+    <state x="231" y="145" width="751" height="546" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1589530643432" />
     <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1588762974980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -244,10 +365,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588428766008" />
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588761518782">
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589098973504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588761518782" />
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1589098973504" />
+    <state x="699" y="206" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589461096258">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="699" y="206" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589461096258" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1588439917951">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -262,13 +387,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Structure/Main/tester.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="9" />
+          <line>54</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Structure/Main/tester.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="10" />
+          <line>26</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/DataInfo.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,10 +1,12 @@
 package Functions.CreateFile;
 
+import Functions.ParameterReaders.ReadParameters;
 import Structure.FileSystemStructure.*;
 
 
 public class CreateFileCommand implements ICommand {
-    CreateFileParameters params; // Ссылка на экземляр класса, реализующего интерфейс IParameterReader и содержащего ссылку на DataInfo.
+    //CreateFileParameters params; // Ссылка на экземляр класса, реализующего интерфейс IParameterReader и содержащего ссылку на DataInfo.
+    DataInfo dataInfoOfCreatingFile;  // Ссылка на новый DataInfo создаваемого файла
 
    /* public CreateFileCommand(String fileName, int fileSize) {
         this.fileName = fileName;
@@ -14,20 +16,22 @@ public class CreateFileCommand implements ICommand {
     @Override
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {
         this.ReadParameters(parameter);
-        DataInfo fileInfo = this.params.fileInfo;
-        createFile(fs, fileInfo);
+        createFile(fs, this.dataInfoOfCreatingFile);
     }
 
     @Override
     public void ReadParameters(IParameterReader p) {
-        IParameterReader paramReader = p.ParameterReader();
-        this.params = (CreateFileParameters) paramReader;
+        this.dataInfoOfCreatingFile = new DataInfo();
+        this.dataInfoOfCreatingFile.setDate(ReadParameters.getCurrentDate());
+        this.dataInfoOfCreatingFile.setNameFile(((ReadParameters) p).readFileName("Введите имя создаваемого файла: "));
+        this.dataInfoOfCreatingFile.setSize(((ReadParameters) p).readFileSize("Введите размер создаваемого файла:  "));
+        this.dataInfoOfCreatingFile.setTypeNote(1);
     }
 
     private void createFile(FileSystem fs, DataInfo fileInfo) {
         int[] filePositions = findPlace(fs, fileInfo);  // Ищем сегмент и место в нём для вставки инф. о файле (DataInfo)
         fs.seg.get(filePositions[0]).info.add(filePositions[1], fileInfo);    // Вставляем DataInfo о новом созданном файле в найденную позицию
-        System.out.println("Успех!");  // для отладки
+        System.out.println("Успех!");  // <------для отладки----->
     }
 
 

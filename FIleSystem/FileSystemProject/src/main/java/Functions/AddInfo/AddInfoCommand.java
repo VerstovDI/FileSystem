@@ -1,9 +1,12 @@
+
 package Functions.AddInfo;
 
+import Functions.ParameterReaders.ReadParameters;
 import Structure.FileSystemStructure.*;
 
 public class AddInfoCommand implements ICommand {
-    AddInfoParameters params;
+
+    private DataInfo dataInfoOfAddInfo;
 
     class FilePlace {
        private int numberSegment;
@@ -17,32 +20,34 @@ public class AddInfoCommand implements ICommand {
     @Override
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {
         this.ReadParameters(parameter);
-        DataInfo fileInfo = this.params.fileInfo;
-        FilePlace fp = findFile(fs, fileInfo);
-        if (fp != null) {
-            System.out.println("Можно добавлять инфу в файл");
+        FilePlace filePlace = findFile(fs, dataInfoOfAddInfo);
+        if (filePlace != null) {
+            System.out.println("Добавляем инфу ");
+        } else {
+            System.out.println("Такого файла не существует!");
         }
-        else {
-            System.out.println("Нет файла");
-        }
+       // message.write();
     }
 
     @Override
-    public void ReadParameters(IParameterReader p) {
-        IParameterReader paramReader = p.ParameterReader();
-        this.params = (AddInfoParameters) paramReader;
+    public void ReadParameters(IParameterReader parameter) {
+        this.dataInfoOfAddInfo = new DataInfo();
+        this.dataInfoOfAddInfo.setNameFile(((ReadParameters) parameter).readFileName("Введите имя файла для добавления информации: "));
+        this.dataInfoOfAddInfo.setSize(((ReadParameters) parameter).readFileSize("Введите размер записи:  "));
+        ((ReadParameters) parameter).readInfo("Введите информацию для добавления:  ",this.dataInfoOfAddInfo.getSize());
     }
 
-    private FilePlace findFile(FileSystem fs,DataInfo fileInfo) {
-        for (int i = 0; i < fs.seg.size() ; i++) {
+    private FilePlace findFile(FileSystem fs,DataInfo fileName) {
+        for (int i = 0; i < fs.seg.size(); i++) {
             Segment segment = fs.seg.get(i);
-            for (int j = 0; j < segment.info.size() ;j++) {
+            for (int j = 0; j < segment.info.size(); j++) {
                 DataInfo dataInfo = segment.info.get(j);
-                if (dataInfo != null && dataInfo.getNameFile().equals(params.fileInfo.getNameFile())) {
-                    return new FilePlace(i,j);
+                if (dataInfo != null && dataInfo.getNameFile().equals(fileName.getNameFile())) {
+                    return new FilePlace(i, j);
                 }
             }
         }
         return null;
     }
 }
+
