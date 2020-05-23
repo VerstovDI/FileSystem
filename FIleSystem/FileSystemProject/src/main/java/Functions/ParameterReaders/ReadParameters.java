@@ -54,18 +54,6 @@ public class ReadParameters implements IParameterReader {
         return fileSize;
     }
 
-    // Считывание информации для добавления в файл. Поскольку самих файлов в ФС нет, то сохранять текст бессмысленно
-    @Override
-    public String readInfo (String message, int fileSize) {
-        StringBuilder info = new StringBuilder();
-        Scanner in = new Scanner(System.in);
-        System.out.format(message);
-        do {
-            info.append(in.nextLine());
-        } while (checkInfoSize(info,fileSize));
-        return info.toString().substring(0,fileSize);
-    }
-
     // Функция получения текущей даты (дата создания файла) в формате [dd, mm, yyyy] - массив int
     // перенести в интерфейс
     public static int[] getCurrentDate() {
@@ -105,8 +93,4 @@ public class ReadParameters implements IParameterReader {
         return fileSize > 0 && fileSize < FileSystem.fileSystemSize;
     }
 
-    //Проверка корректности ввода информации для записи
-    private boolean checkInfoSize (StringBuilder info, int fileSize) {
-        return info.length() < fileSize;
-    }
 }
