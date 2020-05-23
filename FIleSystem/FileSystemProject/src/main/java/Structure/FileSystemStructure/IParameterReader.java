@@ -7,7 +7,5 @@ public interface IParameterReader {
 
     public int readFileSize(String message);  // Считывает размер файла
 
-    public  String readInfo (String message,int fileSize);
-
     public int readFSSize(String message);
 }
