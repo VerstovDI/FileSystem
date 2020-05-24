@@ -36,7 +36,7 @@ public class DefragmentationCommand implements ICommand {
             repair(fs);
 
 
-
+        message.write("Defragmentation complete");
 
         }
     }

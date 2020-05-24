@@ -20,25 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Functions/Fragmentation/FragmentationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/FindPlace/FindPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/FindPlace/FindPlace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IParameterReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IParameterReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSParameters.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IMessageWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IMessageWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IParameterReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IParameterReader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/Defragmentation/DefragmentationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/Defragmentation/DefragmentationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/DownloadFS/DownloadFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/DownloadFS/DownloadFSCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/SaveFS/SaveFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/SaveFS/SaveFSCommand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="FIleSystem" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -145,7 +133,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <module name="FIleSystem" />
       <option name="filePath" />
       <option name="vmParameters" />
@@ -211,6 +199,7 @@
       <workItem from="1589555623355" duration="63000" />
       <workItem from="1589901253660" duration="45000" />
       <workItem from="1590140217575" duration="2676000" />
+      <workItem from="1590301704899" duration="1957000" />
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
@@ -223,19 +212,20 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи; 2) Добавил комментирование к нескольким кускам кода; 3) Скорректировал в DataInfo модификаторы доступа; 4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;; 5) Прочие правки" />
@@ -252,18 +242,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589460387604" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1588432282788">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1590301805012">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588432282788" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590301805012" />
     <state x="690" y="295" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1589460528488">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="295" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589460528488" />
+    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1590301749657">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590301749657" />
     <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588427315464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588427315464" />
+    <state x="503" y="74" key="CommitChangelistDialog2" timestamp="1590303697664">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="503" y="74" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590303697664" />
     <state x="740" y="261" width="424" height="491" key="FileChooserDialogImpl" timestamp="1590140259282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

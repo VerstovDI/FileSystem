@@ -28,6 +28,7 @@ public class DownloadFSCommand implements ICommand {
         catch (IOException exio){
             System.out.println(exio);
         }
+        message.write("file system successfully download");
     }
 
     @Override
