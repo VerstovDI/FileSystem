@@ -19,6 +19,7 @@ public class SaveFSCommand implements ICommand {
         catch (IOException ex){
             System.out.println(ex);
         }
+        message.write("file system successfully saved");
     }
 
     @Override
