@@ -12,9 +12,9 @@ public class FileSystem implements Serializable {
     public int version;                             // Версия ФС
     public ArrayList<Segment> seg;                  // Массив сегментов ФС. В системе может быть не более Segment.segmentsLimit (31) сегмента.
     public int cntOfSegments;                       // Желаемое число сегментов в каталоге (оно обязано быть <= Segment.segmentsLimit).
-    public static final int fileSystemSize = 100;   // Максимальный размер, который могут занимать файлы в файловой системе
+    public  static int fileSystemSize;   // Максимальный размер, который могут занимать файлы в файловой системе
 
-    public FileSystem (int size, String systemName, String ownerName, int tomId, int version) {
+    public FileSystem (int size, String systemName, String ownerName, int tomId, int version,int fileSystemSize) {
         this.systemName = systemName;
         this.ownerName = ownerName;
         this.tomId = tomId;
@@ -23,6 +23,7 @@ public class FileSystem implements Serializable {
         ArrayList<Segment> buf = new ArrayList<Segment>();
         buf.ensureCapacity(size);
         seg = buf;
+        FileSystem.fileSystemSize =fileSystemSize;
     }
 
     @Override

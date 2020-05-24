@@ -8,8 +8,7 @@ import java.util.Scanner;
 
 public class Program {
 
-    static final Monitor monitor = new Monitor(new FileSystem(0,
-            "", "", 0, 0));
+    static final Monitor monitor = new Monitor(new FileSystem(0, "", "", 0, 0, 100));
 
 
     public static int intInput(){

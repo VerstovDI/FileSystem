@@ -14,7 +14,7 @@ public class tester {
 
     public static void main(String[] args) {
         // Отладка создания ФС
-        FileSystem newFileSystem = new FileSystem(4, "MyFileSystem", "Igor", 2, 3);
+        FileSystem newFileSystem = new FileSystem(4, "MyFileSystem", "Igor", 2, 3,100);
 
         // Отладка создания файла (создание файла в пустой ФС)
         CreateFileCommand fileCommand = new CreateFileCommand();
