@@ -11,8 +11,6 @@ public class FragmentationCommand implements ICommand {
         if (fs.seg.isEmpty()) {//пустая ли ФС
 
         } else {
-
-           int head= fs.seg.get(0).head;
            int full=0;
            int empty=0;
            int maxempty=0;
@@ -28,15 +26,15 @@ public class FragmentationCommand implements ICommand {
                 }
             }
 
-           if(maxempty<FileSystem.fileSystemSize -full-empty)
-               maxempty=FileSystem.fileSystemSize -full-empty;
+           if(maxempty< FileSystem.fileSystemSize -full-empty)
+               maxempty= FileSystem.fileSystemSize -full-empty;
             empty += FileSystem.fileSystemSize -full-empty;
-            int frag=(int)(FileSystem.fileSystemSize/empty)*100;
-
-            message.write("Empty space size ="+ empty +"\n"+"Fragmentation ="+frag+"%"+"\n"+"Max place for file = "+ maxempty);
+            double frag=((double)empty/(double) FileSystem.fileSystemSize)*100;
+           // double frag=((empty/FileSystem.fileSystemSize)*100);
+            message.write("Empty space size ="+ empty +"\n"+"Fragmentation ="+(int)frag+"%"+"\n"+"Max place for file = "+ maxempty);
         }
-
     }
+
 
     @Override
     public void ReadParameters(IParameterReader parameterReader) {

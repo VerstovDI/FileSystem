@@ -104,7 +104,7 @@ public class DefragmentationCommand implements ICommand {
     }
 
     private void repair(FileSystem fs){
-        int size=0;
+        int size=fs.seg.get(0).head;
         Segment.counter = fs.seg.size();
         for(int i=0;i<fs.seg.size();i++){
             fs.seg.get(i).head=size;
