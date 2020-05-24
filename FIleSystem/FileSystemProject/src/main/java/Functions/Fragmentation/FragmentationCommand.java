@@ -30,7 +30,7 @@ public class FragmentationCommand implements ICommand {
                maxempty= FileSystem.fileSystemSize -full-empty;
             empty += FileSystem.fileSystemSize -full-empty;
             double frag=((double)empty/(double) FileSystem.fileSystemSize)*100;
-            empty=emptySpace(fs);
+            // empty=emptySpace(fs);
             message.write("Empty space size ="+ empty +"\n"+"Fragmentation ="+(int)frag+"%"+"\n"+"Max place for file = "+ maxempty);
         }
     }

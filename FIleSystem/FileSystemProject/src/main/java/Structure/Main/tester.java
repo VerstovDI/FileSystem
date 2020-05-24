@@ -19,10 +19,9 @@ public class tester {
         // Отладка создания файла (создание файла в пустой ФС)
         CreateFileCommand fileCommand = new CreateFileCommand();
         IMessageWriter imw = new IMessageWriter() {
-            String message1 ="заглушка";
             @Override
             public void write(String message) {
-                System.out.println(message1);
+                System.out.println(message);
             }
         };
         ReadParameters fileCreationParameters = new ReadParameters();
@@ -42,7 +41,7 @@ public class tester {
         };
         DeleteFileCommand delFileCommand = new DeleteFileCommand();
         ReadParameters delFileParameters = new ReadParameters();
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 2; i++) {
             delFileCommand.Execute(newFileSystem, delFileParameters, imw1);
         }
         delFileCommand.Execute(newFileSystem, delFileParameters, imw1);
