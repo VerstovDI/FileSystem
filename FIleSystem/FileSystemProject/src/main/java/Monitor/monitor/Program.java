@@ -8,28 +8,23 @@ import java.util.Scanner;
 
 public class Program {
 
-    static final Monitor monitor = new Monitor(new FileSystem(0, "", "", 0, 0, 100));
-
+    static final Monitor monitor = new Monitor(new FileSystem(0, "",
+            "", 0, 0, 100));
 
     public static int intInput(){
-        int rez = 0;
-        int i = 0;
+        int rez;
         String mistake = "";
-        boolean check = false;
         Scanner sc = new Scanner(System.in);
-        while(!check) {
-            if(i == 1){
-                System.out.print("Некорректный ввод " + mistake +
-                        ", ожидается целое число, пожалуйста, повторите: ");
-            }
+        do {
             try {
                 rez = sc.nextInt();
-                check = true;
+                break;
             } catch (InputMismatchException nfe) {
                 mistake = sc.nextLine();
-                i = 1;
             }
-        }
+            System.out.print("Некорректный ввод " + mistake +
+                    ", ожидается целое число, пожалуйста, повторите: ");
+        }while(true);
         return rez;
     }
 
@@ -80,45 +75,70 @@ public class Program {
         init();
         while (true) {
             System.out.print(monitor.fs.ownerName + "> ");
-            String command = sc.next();
+            String command = sc.nextLine();
 
-            if (command.equals("exit")) {
+            if (command.trim().equals("exit")) {
                 doWithQuestionAboutSave((monitor) -> {});
                 break;
             }
 
-            if (command.equals("create")) {
+            if (command.trim().equals("create")) {
                 doWithQuestionAboutSave(Monitor::create);
                 check = true;
             }
 
-            if (command.equals("download")) {
+            if (command.trim().equals("download")) {
                 doWithQuestionAboutSave(Monitor::download);
                 check = true;
             }
 
-            if (command.equals("help")) {
+            if (command.trim().equals("help")) {
                 monitor.help();
                 check = true;
             }
 
-            if (command.equals("file")) {
+            if (command.trim().equals("create file")) {
                 monitor.file();
                 check = true;
             }
 
-            if (command.equals("delete")) {
+            if (command.trim().equals("delete")) {
                 monitor.delete();
                 check = true;
             }
 
-            if (command.equals("save")) {
+            if (command.trim().equals("save")) {
                 monitor.save();
                 check = true;
             }
 
-            if (command.equals("add")) {
+            if (command.trim().equals("add")) {
                 monitor.add();
+                check = true;
+            }
+
+            if (command.trim().equals("title")) {
+                monitor.title();
+                check = true;
+            }
+
+            if (command.trim().equals("title in order")) {
+                monitor.title_in_order();
+                check = true;
+            }
+
+            if (command.trim().equals("defragmentation")) {
+                monitor.defragmentation();
+                check = true;
+            }
+
+            if (command.trim().equals("fragmentation")) {
+                monitor.fragmentation();
+                check = true;
+            }
+
+            if (command.trim().equals("info")){
+                System.out.println(monitor.fs);
                 check = true;
             }
 
