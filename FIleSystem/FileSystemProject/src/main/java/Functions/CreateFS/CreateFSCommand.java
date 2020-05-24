@@ -16,7 +16,7 @@ public class CreateFSCommand implements ICommand {
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {
         ReadParameters(parameter);
         FileSystem buf = new FileSystem(size, systemName, ownerName, tomId, version,fileSystemSize);
-        fs = buf;
+        fs.copy(buf);
         message.write("file system successfully created");
     }
 
