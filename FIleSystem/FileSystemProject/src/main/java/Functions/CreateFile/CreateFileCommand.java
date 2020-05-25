@@ -1,5 +1,6 @@
 package Functions.CreateFile;
 
+import Functions.Fragmentation.FragmentationCommand;
 import Functions.ParameterReaders.ReadParameters;
 import Structure.FileSystemStructure.*;
 import org.javatuples.Triplet;
@@ -31,15 +32,19 @@ public class CreateFileCommand implements ICommand {
 
     // Функция создания файла. Сначала пытаемся создать файл в пустых промежутках, затем - в конце, иначе - false.
     private boolean createFile(FileSystem fs, DataInfo newFileInfo) {
-        if (fs.seg.isEmpty()) {    // Если ФС пустая - добавляем первый сегмент, возвращаем искомые позиции
-            addSegment(fs, Segment.segmentSize * Segment.segmentsLimit + 1);
-            fs.seg.get(0).info.add(0, newFileInfo);
-            return true;
+        if (FragmentationCommand.emptySpace(fs) < newFileInfo.getSize()) {
+            return false;
         } else {
-            if (createFileTillTheEnd(fs, newFileInfo)) {
+            if (fs.seg.isEmpty()) {    // Если ФС пустая - добавляем первый сегмент, возвращаем искомые позиции
+                addSegment(fs, Segment.segmentSize * Segment.segmentsLimit + 1);
+                fs.seg.get(0).info.add(0, newFileInfo);
                 return true;
             } else {
-                return createFileInTheEnd(fs, newFileInfo);
+                if (createFileTillTheEnd(fs, newFileInfo)) {
+                    return true;
+                } else {
+                    return createFileInTheEnd(fs, newFileInfo);
+                }
             }
         }
     }

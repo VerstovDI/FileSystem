@@ -35,14 +35,12 @@ public class FragmentationCommand implements ICommand {
         }
     }
 
-
     @Override
     public void ReadParameters(IParameterReader parameterReader) {
 
     }
 
-
-    public int emptySpace(FileSystem fs) {
+    public static int emptySpace(FileSystem fs) {
         int full = 0;
         int empty = 0;
         for (int j = 0; j < fs.seg.size(); j++)
