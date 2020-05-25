@@ -70,16 +70,31 @@ public class ReadParameters implements IParameterReader {
 
     @Override
     public int readFSSize(String message){
-        int size = 0;
-        Scanner in = new Scanner(System.in);
-        boolean err = true;
-        while (err) {
-            System.out.println(message);
-            size = in.nextInt();
-            if (size > 0 && size < 32) {
-                err = false;
+        Scanner sc = new Scanner(System.in);
+        int size;
+        do {
+            System.out.format(message);
+            while (!sc.hasNextInt()) {
+                System.out.println("Введено не число! Повторите ввод, пожалуйста!");
+                sc.next();
             }
-        }
+            size = sc.nextInt();
+        } while (size < 1 || size > 31) ;
+        return size;
+    }
+
+    @Override
+    public int readSizeForFiles(String message) {
+        Scanner sc = new Scanner(System.in);
+        int size;
+        do {
+            System.out.format(message);
+            while (!sc.hasNextInt()) {
+                System.out.println("Введено не число! Повторите ввод, пожалуйста!");
+                sc.next();
+            }
+            size = sc.nextInt();
+        } while (size <= 0 || size > Integer.MAX_VALUE/10);
         return size;
     }
 

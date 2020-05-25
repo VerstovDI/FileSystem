@@ -19,16 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="">
+    <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="Мелкие правки (комментирование, форматирование и т.д.)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/Fragmentation/FragmentationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/Fragmentation/FragmentationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IMessageWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IMessageWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IParameterReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IParameterReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/Main/tester.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSCommand.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DownloadFS/DownloadFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/DownloadFS/DownloadFSCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Functions/SaveFS/SaveFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/SaveFS/SaveFSCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Monitor/program/Program.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IParameterReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IParameterReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +99,20 @@
       <recent name="C:\Users\Данила\IdeaProjects\FIleSystem\FileSystemProject\src\main\java\Structure" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.tester">
+  <component name="RunManager" selected="Application.Program (1)">
+    <configuration name="Program (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Monitor.monitor.Program" />
+      <module name="FileSystemProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Monitor.monitor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Program" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Monitor.program.Program" />
       <module name="FileSystemProject" />
@@ -185,6 +203,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Program (1)" />
         <item itemvalue="Application.tester" />
         <item itemvalue="Application.Program" />
         <item itemvalue="JUnit.DataInfoTest" />
@@ -216,7 +235,8 @@
       <workItem from="1589901253660" duration="45000" />
       <workItem from="1590140217575" duration="2676000" />
       <workItem from="1590301704899" duration="1957000" />
-      <workItem from="1590404320577" duration="813000" />
+      <workItem from="1590404320577" duration="5177000" />
+      <workItem from="1590410081808" duration="556000" />
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
@@ -232,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590319354950</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Сделал метод emptySpace из класса FragmentationCommand static. Добавил проверку при создании файла на вставку файла размером, большим, чем осталось места">
+      <created>1590405228321</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1590405228322</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +283,8 @@
     <MESSAGE value="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;2) Добавил комментирование к нескольким кускам кода; 3) Скорректировал в DataInfo модификаторы доступа; 4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;; 5) Прочие правки" />
     <MESSAGE value="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки" />
     <MESSAGE value="1) Изменил CreateFileCommand. Теперь файлы вставляются и в середину при условии, что подряд идут хотя бы два пустых DataInfo или в одинарном пустом DataInfo места хвататет точь-в-точь. Иначе были бы неразмеченные области.&#10;2) Прочие правки" />
-    <option name="LAST_COMMIT_MESSAGE" value="1) Изменил CreateFileCommand. Теперь файлы вставляются и в середину при условии, что подряд идут хотя бы два пустых DataInfo или в одинарном пустом DataInfo места хвататет точь-в-точь. Иначе были бы неразмеченные области.&#10;2) Прочие правки" />
+    <MESSAGE value="Сделал метод emptySpace из класса FragmentationCommand static. Добавил проверку при создании файла на вставку файла размером, большим, чем осталось места" />
+    <option name="LAST_COMMIT_MESSAGE" value="Сделал метод emptySpace из класса FragmentationCommand static. Добавил проверку при создании файла на вставку файла размером, большим, чем осталось места" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1588762043302">
@@ -267,10 +295,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1589460387604" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1590301805012">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1590407641388">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590301805012" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590407641388" />
     <state x="690" y="295" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1589460528488">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -283,68 +311,68 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588427315464" />
-    <state x="0" y="74" key="CommitChangelistDialog2" timestamp="1590319351372">
+    <state x="173" y="94" key="CommitChangelistDialog2" timestamp="1590410849581">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="74" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590319351372" />
+    <state x="173" y="94" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590410849581" />
     <state x="740" y="261" width="424" height="491" key="FileChooserDialogImpl" timestamp="1590140259282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590140259282" />
     <state x="526" y="213" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1589901299602" />
-    <state width="1877" height="213" key="GridCell.Tab.0.bottom" timestamp="1590142959910">
+    <state width="1877" height="245" key="GridCell.Tab.0.bottom" timestamp="1590410849731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590142959910" />
+    <state width="1877" height="245" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590410849731" />
     <state width="1320" height="60" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1589531541478" />
-    <state width="1877" height="213" key="GridCell.Tab.0.center" timestamp="1590142959910">
+    <state width="1877" height="245" key="GridCell.Tab.0.center" timestamp="1590410849731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590142959910" />
+    <state width="1877" height="245" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590410849731" />
     <state width="1320" height="60" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1589531541474" />
-    <state width="1877" height="213" key="GridCell.Tab.0.left" timestamp="1590142959910">
+    <state width="1877" height="245" key="GridCell.Tab.0.left" timestamp="1590410849731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590142959910" />
+    <state width="1877" height="245" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590410849731" />
     <state width="1320" height="60" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1589531541472" />
-    <state width="1877" height="213" key="GridCell.Tab.0.right" timestamp="1590142959910">
+    <state width="1877" height="245" key="GridCell.Tab.0.right" timestamp="1590410849731">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="213" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590142959910" />
+    <state width="1877" height="245" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590410849731" />
     <state width="1320" height="60" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1589531541476" />
-    <state width="1877" height="393" key="GridCell.Tab.1.bottom" timestamp="1590142413296">
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom" timestamp="1590410657453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590142413296" />
-    <state width="1877" height="393" key="GridCell.Tab.1.center" timestamp="1590142413295">
+    <state width="1877" height="326" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590410657453" />
+    <state width="1877" height="326" key="GridCell.Tab.1.center" timestamp="1590410657453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590142413295" />
-    <state width="1877" height="393" key="GridCell.Tab.1.left" timestamp="1590142413295">
+    <state width="1877" height="326" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590410657453" />
+    <state width="1877" height="326" key="GridCell.Tab.1.left" timestamp="1590410657453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590142413295" />
-    <state width="1877" height="393" key="GridCell.Tab.1.right" timestamp="1590142413296">
+    <state width="1877" height="326" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590410657453" />
+    <state width="1877" height="326" key="GridCell.Tab.1.right" timestamp="1590410657453">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="393" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590142413296" />
+    <state width="1877" height="326" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590410657453" />
     <state x="231" y="145" width="751" height="546" key="SettingsEditor" timestamp="1589530643432">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="324" y="165" width="998" height="715" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588428002380" />
     <state x="231" y="145" width="751" height="546" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1589530643432" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590319420355">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590405282754">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590319420355" />
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590404320614">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590405282754" />
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590410324869">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590404320614" />
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590404392617">
+    <state x="655" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590410324869" />
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590406991376">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590404392617" />
+    <state x="769" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590406991376" />
     <state x="699" y="206" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1589461096258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -359,6 +387,15 @@
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1588762189927" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo typeName="Structure.FileSystemStructure.Segment" fieldName="info" />

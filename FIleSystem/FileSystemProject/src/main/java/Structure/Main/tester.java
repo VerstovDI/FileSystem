@@ -89,8 +89,6 @@ public class tester {
         TitleInOrderCommand titleOrderCommand = new TitleInOrderCommand();
         ReadParameters titleOrderParameters = new ReadParameters();
         titleOrderCommand.Execute(newFileSystem,titleOrderParameters,imw4 );
-
-
     }
 
 }

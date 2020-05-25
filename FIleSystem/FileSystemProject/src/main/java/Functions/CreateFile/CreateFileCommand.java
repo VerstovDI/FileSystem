@@ -109,7 +109,7 @@ public class CreateFileCommand implements ICommand {
                 addSegment(fs,currSegment.head + segmentFilesSize(currSegment));
                 newFilePosition = new int[]{Segment.currentSegment, 0};
             } else {
-                System.out.println("Все сегменты заняты.");
+                System.out.println("Все сегменты заняты!");
             }
         }
         if (newFilePosition[0] != -1) {
