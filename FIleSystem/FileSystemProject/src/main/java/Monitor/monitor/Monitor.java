@@ -85,8 +85,8 @@ public class Monitor {
         if (!(ic instanceof DefragmentationCommand)) {
             ic = new DefragmentationCommand();
         }
-        fs = new FileSystem(1, "",
-                "", 0, 0, 100);
+        /*fs = new FileSystem(1, "",
+                "", 0, 0, 100);*/
         ic.Execute(fs, ipr, System.out::println);
     }
 

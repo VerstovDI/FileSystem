@@ -24,7 +24,7 @@ public class Program {
             }
             System.out.print("Некорректный ввод " + mistake +
                     ", ожидается целое число, пожалуйста, повторите: ");
-        }while(true);
+        } while(true);
         return rez;
     }
 

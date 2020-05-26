@@ -21,8 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/Fragmentation/FragmentationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/Fragmentation/FragmentationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Monitor/monitor/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Monitor/monitor/Monitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Monitor/monitor/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Monitor/monitor/Program.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,7 +227,7 @@
       <workItem from="1590301704899" duration="1957000" />
       <workItem from="1590404320577" duration="5177000" />
       <workItem from="1590410081808" duration="1757000" />
-      <workItem from="1590492413059" duration="3260000" />
+      <workItem from="1590492413059" duration="3805000" />
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
@@ -256,7 +257,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590410871357</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="пофиксил баг, который обнаружил Ваня, связанный со вставкой в неполный сегмент файла с размером, большим, чем есть пустого непрерывного места">
+      <created>1590497330424</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590497330424</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +290,8 @@
     <MESSAGE value="1) Изменил CreateFileCommand. Теперь файлы вставляются и в середину при условии, что подряд идут хотя бы два пустых DataInfo или в одинарном пустом DataInfo места хвататет точь-в-точь. Иначе были бы неразмеченные области.&#10;2) Прочие правки" />
     <MESSAGE value="Сделал метод emptySpace из класса FragmentationCommand static. Добавил проверку при создании файла на вставку файла размером, большим, чем осталось места" />
     <MESSAGE value="Скорректировал функции чтения параметров в ReadParameters + CreateFSCommand. Мелкие правки (комментирование, форматирование и т.д.)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Скорректировал функции чтения параметров в ReadParameters + CreateFSCommand. Мелкие правки (комментирование, форматирование и т.д.)" />
+    <MESSAGE value="пофиксил баг, который обнаружил Ваня, связанный со вставкой в неполный сегмент файла с размером, большим, чем есть пустого непрерывного места" />
+    <option name="LAST_COMMIT_MESSAGE" value="пофиксил баг, который обнаружил Ваня, связанный со вставкой в неполный сегмент файла с размером, большим, чем есть пустого непрерывного места" />
   </component>
   <component name="WindowStateProjectService">
     <state x="586" y="198" key="#Inspections" timestamp="1588762043302">
@@ -309,34 +318,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588427315464" />
-    <state x="173" y="94" key="CommitChangelistDialog2" timestamp="1590410866111">
+    <state x="173" y="94" key="CommitChangelistDialog2" timestamp="1590497325640">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="173" y="94" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590410866111" />
+    <state x="173" y="94" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1590497325640" />
     <state x="740" y="261" width="424" height="491" key="FileChooserDialogImpl" timestamp="1590140259282">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590140259282" />
     <state x="526" y="213" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1589901299602" />
-    <state width="1877" height="247" key="GridCell.Tab.0.bottom" timestamp="1590497157142">
+    <state width="1877" height="260" key="GridCell.Tab.0.bottom" timestamp="1590497827750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="247" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590497157142" />
+    <state width="1877" height="260" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590497827750" />
     <state width="1320" height="60" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1589531541478" />
-    <state width="1877" height="247" key="GridCell.Tab.0.center" timestamp="1590497157142">
+    <state width="1877" height="260" key="GridCell.Tab.0.center" timestamp="1590497827750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="247" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590497157142" />
+    <state width="1877" height="260" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590497827750" />
     <state width="1320" height="60" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1589531541474" />
-    <state width="1877" height="247" key="GridCell.Tab.0.left" timestamp="1590497157142">
+    <state width="1877" height="260" key="GridCell.Tab.0.left" timestamp="1590497827750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="247" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590497157142" />
+    <state width="1877" height="260" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590497827750" />
     <state width="1320" height="60" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1589531541472" />
-    <state width="1877" height="247" key="GridCell.Tab.0.right" timestamp="1590497157142">
+    <state width="1877" height="260" key="GridCell.Tab.0.right" timestamp="1590497827750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="247" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590497157142" />
+    <state width="1877" height="260" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590497827750" />
     <state width="1320" height="60" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1589531541476" />
     <state width="1877" height="247" key="GridCell.Tab.1.bottom" timestamp="1590497157143">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -359,10 +368,10 @@
     </state>
     <state x="324" y="165" width="998" height="715" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588428002380" />
     <state x="231" y="145" width="751" height="546" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1589530643432" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590410883476">
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1590497339454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590410883476" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590497339454" />
     <state x="655" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590492412324">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
