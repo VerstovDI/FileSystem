@@ -32,7 +32,7 @@ public class CreateFileCommand implements ICommand {
 
     // Функция создания файла. Сначала пытаемся создать файл в пустых промежутках, затем - в конце, иначе - false.
     private boolean createFile(FileSystem fs, DataInfo newFileInfo) {
-        if (FragmentationCommand.emptySpace(fs) < newFileInfo.getSize()) {
+        if (FragmentationCommand.emptySpace(fs) < newFileInfo.getSize() || maxContinuousEmpty(fs) < newFileInfo.getSize()) {
             return false;
         } else {
             if (fs.seg.isEmpty()) {    // Если ФС пустая - добавляем первый сегмент, возвращаем искомые позиции
@@ -154,4 +154,28 @@ public class CreateFileCommand implements ICommand {
         }
         Segment.counter++;
     }
+
+    // Функция нахождения подряд идущего пустого места [Перенести в Fragmentation, объединив с реализацией функции фрагментации
+    private int maxContinuousEmpty(FileSystem fs) { // Пока дублирование кода. Впоследствие - избавиться!
+        int full=0;
+        int empty=0;
+        int maxempty=0;
+        //size = (fs.seg.get(fs.seg.size()-1).head-head);
+        for(int j = 0; j < fs.seg.size(); j++)
+            for (int i = 0; i < fs.seg.get(j).info.size(); i++) {
+                if (fs.seg.get(j).info.get(i).getTypeNote() == 1)
+                    full += fs.seg.get(j).info.get(i).getSize();
+                else {
+                    if (fs.seg.get(j).info.get(i).getSize() > maxempty)
+                        maxempty = fs.seg.get(j).info.get(i).getSize();
+                    empty += fs.seg.get(j).info.get(i).getSize();
+                }
+            }
+
+        if (maxempty < FileSystem.fileSystemSize - full - empty)
+            maxempty = FileSystem.fileSystemSize - full - empty;
+        empty += FileSystem.fileSystemSize - full - empty;
+        return maxempty;
+    }
+
 }
