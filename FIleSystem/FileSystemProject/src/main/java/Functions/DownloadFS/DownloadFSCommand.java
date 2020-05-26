@@ -11,9 +11,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 
-
 public class DownloadFSCommand implements ICommand {
     String fileName;
+    boolean wasDownload; // Чтобы в мониторе была возможность отследить правильность введённых данных.
+    // Также ниже есть геттер.
+
     @Override
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {
         ReadParameters(parameter);
@@ -21,14 +23,13 @@ public class DownloadFSCommand implements ICommand {
             FileSystem fsbuf = null;
             fsbuf=this.Download(fileName);
             fs.copy(fsbuf);
+            message.write("Файловая система успешно загружена!"); //Везде по-русски, пусть и тут тоже
+            wasDownload = true;
         }
-        catch (ClassNotFoundException ex){
+        catch (ClassNotFoundException | IOException ex){
             System.out.println(ex);
+            wasDownload = false;
         }
-        catch (IOException exio){
-            System.out.println(exio);
-        }
-        message.write("file system successfully download");
     }
 
     @Override
@@ -55,5 +56,9 @@ public class DownloadFSCommand implements ICommand {
         oi.close();
         fi.close();
         return fs;
+    }
+
+    public boolean isWasDownload() {
+        return wasDownload;
     }
 }

@@ -30,9 +30,14 @@ public class Monitor {
         if (!(ic instanceof DownloadFSCommand)) {
             ic = new DownloadFSCommand();
         }
-        fs = new FileSystem(0, "",
-                "", 0, 0, 100);
+        fs = new FileSystem(1, "anonymFS",
+                "anonym", 0, 0, 100);
         ic.Execute(fs, ipr, System.out::println);
+        if (!((DownloadFSCommand) ic).isWasDownload()) {
+            System.out.println("Упс, похоже вы неправильно ввели имя файла для загрузки ФС.\n" +
+                    "Текущая файловая система инициальзирована по умолчанию (см. info)\n" +
+                    "Вы можете продолжать работу в ФС по умолчанию либо повторить попытку командой download.");
+        }
     }
 
     public void create(){
@@ -40,7 +45,7 @@ public class Monitor {
             ic = new CreateFSCommand();
         }
         fs = new FileSystem(0, "",
-                "", 0, 0, 100);
+                "", 0, 0, 0);
         ic.Execute(fs, ipr, System.out::println);
     }
 
@@ -85,8 +90,6 @@ public class Monitor {
         if (!(ic instanceof DefragmentationCommand)) {
             ic = new DefragmentationCommand();
         }
-        /*fs = new FileSystem(1, "",
-                "", 0, 0, 100);*/
         ic.Execute(fs, ipr, System.out::println);
     }
 
