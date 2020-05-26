@@ -1,32 +1,33 @@
 
 package Functions.AddInfo;
 
+import Functions.FindPlace.FindPlace;
 import Functions.ParameterReaders.ReadParameters;
 import Structure.FileSystemStructure.*;
+
+import static Functions.FindPlace.FindPlace.findFile;
 
 public class AddInfoCommand implements ICommand {
 
     private DataInfo dataInfoOfAddInfo;
 
-    class FilePlace {
-       private int numberSegment;
-       private int numberRecord;
 
-       FilePlace (int numberSegment, int numberRecord) {
-           this.numberRecord = numberRecord;
-           this.numberSegment = numberSegment;
-       }
-    }
     @Override
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {
         this.ReadParameters(parameter);
-        FilePlace filePlace = findFile(fs, dataInfoOfAddInfo);
+        FindPlace filePlace = findFile(fs, dataInfoOfAddInfo.getNameFile());
         if (filePlace != null) {
-            System.out.println("Добавляем инфу ");
+            Segment segment = fs.seg.get(filePlace.getNumberOfSegment());
+            int fileSize = segment.info.get(filePlace.getNumberOfRecord()).getSize();
+            if (this.dataInfoOfAddInfo.getSize() > fileSize) {
+                message.write("Размер записи превышает размер файла");
+            }
+            else {
+                message.write("Информация в файл добавлена");
+            }
         } else {
-            System.out.println("Такого файла не существует!");
+            message.write("Такого файла не существует!");
         }
-       // message.write();
     }
 
     @Override
@@ -34,20 +35,7 @@ public class AddInfoCommand implements ICommand {
         this.dataInfoOfAddInfo = new DataInfo();
         this.dataInfoOfAddInfo.setNameFile(((ReadParameters) parameter).readFileName("Введите имя файла для добавления информации: "));
         this.dataInfoOfAddInfo.setSize(((ReadParameters) parameter).readFileSize("Введите размер записи:  "));
-        ((ReadParameters) parameter).readInfo("Введите информацию для добавления:  ",this.dataInfoOfAddInfo.getSize());
     }
 
-    private FilePlace findFile(FileSystem fs,DataInfo fileName) {
-        for (int i = 0; i < fs.seg.size(); i++) {
-            Segment segment = fs.seg.get(i);
-            for (int j = 0; j < segment.info.size(); j++) {
-                DataInfo dataInfo = segment.info.get(j);
-                if (dataInfo != null && dataInfo.getNameFile().equals(fileName.getNameFile())) {
-                    return new FilePlace(i, j);
-                }
-            }
-        }
-        return null;
-    }
 }
 

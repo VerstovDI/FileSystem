@@ -1,16 +1,14 @@
 package Structure.FileSystemStructure;
 
+// Интерфейс для чтения вводимых параметров при операциях с ФС
 public interface IParameterReader {
     IParameterReader ParameterReader ();    // Считыватель параметров
 
-    // Добавим public String readFilename(String message) ;
-    public String readFileName(String message);
+    String readFileName(String message);  // Считывает имя файла
 
-    public int readFileSize(String message);
+    int readFileSize(String message);  // Считывает размер файла
 
-    public  String readInfo (String message,int fileSize);
+    int readFSSize(String message);  // Считывает число сегментов ФС
 
-    public int readFSSize(String message);
-
-
+    int readSizeForFiles(String message); // Считывает размер под файлы в ФС
 }

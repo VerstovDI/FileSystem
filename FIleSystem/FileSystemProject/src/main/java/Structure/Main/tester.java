@@ -4,6 +4,8 @@ import Functions.AddInfo.AddInfoCommand;
 import Functions.CreateFile.CreateFileCommand;
 import Functions.DeleteFile.DeleteFileCommand;
 import Functions.ParameterReaders.ReadParameters;
+import Functions.Title.TitleCommand;
+import Functions.TitleInOrder.TitleInOrderCommand;
 import Structure.FileSystemStructure.FileSystem;
 import Structure.FileSystemStructure.IMessageWriter;
 
@@ -12,15 +14,14 @@ public class tester {
 
     public static void main(String[] args) {
         // Отладка создания ФС
-        FileSystem newFileSystem = new FileSystem(4, "MyFileSystem", "Igor", 2, 3);
+        FileSystem newFileSystem = new FileSystem(4, "MyFileSystem", "Igor", 2, 3,100);
 
         // Отладка создания файла (создание файла в пустой ФС)
         CreateFileCommand fileCommand = new CreateFileCommand();
         IMessageWriter imw = new IMessageWriter() {
-            String message1 ="заглушка";
             @Override
             public void write(String message) {
-                System.out.println(message1);
+                System.out.println(message);
             }
         };
         ReadParameters fileCreationParameters = new ReadParameters();
@@ -40,7 +41,7 @@ public class tester {
         };
         DeleteFileCommand delFileCommand = new DeleteFileCommand();
         ReadParameters delFileParameters = new ReadParameters();
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 2; i++) {
             delFileCommand.Execute(newFileSystem, delFileParameters, imw1);
         }
         delFileCommand.Execute(newFileSystem, delFileParameters, imw1);
@@ -53,12 +54,41 @@ public class tester {
             fileCommand.Execute(newFileSystem, fileCreationParameters, imw);
         }
 
-        // Отладка добавления информации в файл. Ввод информации прекращается после того как размер информации
-        //превысит или станет равным вводимому размеру. Не нужно нажимать ctrl+D как в прошлой версии!!!
+        // Отладка вывода оглавления как оно есть
+        IMessageWriter imw2 = new IMessageWriter() {
+            @Override
+            public void write(String message) {
+                System.out.println(message);
+            }
+        };
+
+        TitleCommand titleCommand = new TitleCommand();
+        ReadParameters titleParameters = new ReadParameters();
+        titleCommand.Execute(newFileSystem,titleParameters,imw2 );
+
+        // Отладка добавления информации в файл
+        IMessageWriter imw3 = new IMessageWriter() {
+            @Override
+            public void write(String message) {
+                System.out.println(message);
+            }
+        };
+
         AddInfoCommand addInfoCommand = new AddInfoCommand();
         ReadParameters addInfoParameters = new ReadParameters();
-        addInfoCommand.Execute(newFileSystem, addInfoParameters, imw);
+        addInfoCommand.Execute(newFileSystem, addInfoParameters, imw3);
 
+        // Отладка вывода оглавления в алфавитном порядке
+        IMessageWriter imw4 = new IMessageWriter() {
+            @Override
+            public void write(String message) {
+                System.out.println(message);
+            }
+        };
+
+        TitleInOrderCommand titleOrderCommand = new TitleInOrderCommand();
+        ReadParameters titleOrderParameters = new ReadParameters();
+        titleOrderCommand.Execute(newFileSystem,titleOrderParameters,imw4 );
     }
 
 }

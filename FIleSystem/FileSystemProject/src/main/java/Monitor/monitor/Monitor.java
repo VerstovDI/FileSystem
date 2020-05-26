@@ -3,51 +3,45 @@ package Monitor.monitor;
 import Functions.AddInfo.AddInfoCommand;
 import Functions.CreateFS.CreateFSCommand;
 import Functions.CreateFile.CreateFileCommand;
+import Functions.Defragmentation.DefragmentationCommand;
 import Functions.DeleteFile.DeleteFileCommand;
 import Functions.DownloadFS.DownloadFSCommand;
+import Functions.Fragmentation.FragmentationCommand;
 import Functions.ParameterReaders.ReadParameters;
 import Functions.SaveFS.SaveFSCommand;
+import Functions.Title.TitleCommand;
+import Functions.TitleInOrder.TitleInOrderCommand;
 import Structure.FileSystemStructure.FileSystem;
-import Structure.FileSystemStructure.IMessageWriter;
+import Structure.FileSystemStructure.ICommand;
 import Structure.FileSystemStructure.IParameterReader;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 
 public class Monitor {
 
     FileSystem fs;
+    ICommand ic;
+    IParameterReader ipr = new ReadParameters();
 
     Monitor(FileSystem fs){
         this.fs = fs;
     }
 
     public void download(){
-        DownloadFSCommand downloadFS = new DownloadFSCommand();
-        IParameterReader ipr = new ReadParameters();
-        IMessageWriter imw = new IMessageWriter() {
-            String message ="заглушка";
-            @Override
-            public void write(String message) {
-                System.out.println(message);
-            }
-        };
-        downloadFS.Execute(fs, ipr, imw);
+        if (!(ic instanceof DownloadFSCommand)) {
+            ic = new DownloadFSCommand();
+        }
+        fs = new FileSystem(0, "",
+                "", 0, 0, 100);
+        ic.Execute(fs, ipr, System.out::println);
     }
 
     public void create(){
-        CreateFSCommand newFS = new CreateFSCommand();
-        IParameterReader newFSPar = new ReadParameters();
-        IMessageWriter imw = new IMessageWriter() {
-            String message ="заглушка";
-            @Override
-            public void write(String message) {
-                System.out.println(message);
-            }
-        };
-        newFS.Execute(fs, newFSPar, imw);
+        if (!(ic instanceof CreateFSCommand)) {
+            ic = new CreateFSCommand();
+        }
+        fs = new FileSystem(0, "",
+                "", 0, 0, 100);
+        ic.Execute(fs, ipr, System.out::println);
     }
 
     public void help() throws IOException {
@@ -60,54 +54,60 @@ public class Monitor {
     }
 
     public void file(){
-        CreateFileCommand cfc = new CreateFileCommand();
-        IParameterReader ipr = new ReadParameters();
-        IMessageWriter imw = new IMessageWriter() {
-            String message ="заглушка";
-            @Override
-            public void write(String message) {
-                System.out.println(message);
-            }
-        };
-        cfc.Execute(fs, ipr, imw);
+        if (!(ic instanceof CreateFileCommand)) {
+            ic = new CreateFileCommand();
+        }
+        ic.Execute(fs, ipr, System.out::println);
     }
 
     public void delete(){
-        DeleteFileCommand dfc = new DeleteFileCommand();
-        IParameterReader ipr = new ReadParameters();
-        IMessageWriter imw = new IMessageWriter() {
-            String message ="заглушка";
-            @Override
-            public void write(String message) {
-                System.out.println(message);
-            }
-        };
-        dfc.Execute(fs, ipr, imw);
+        if (!(ic instanceof DeleteFileCommand)) {
+            ic = new DeleteFileCommand();
+        }
+        ic.Execute(fs, ipr, System.out::println);
     }
 
     public void save(){
-        SaveFSCommand sfc = new SaveFSCommand();
-        IParameterReader ipr = new ReadParameters();
-        IMessageWriter imw = new IMessageWriter() {
-            String message ="заглушка";
-            @Override
-            public void write(String message) {
-                System.out.println(message);
-            }
-        };
-        sfc.Execute(fs, ipr, imw);
+        if (!(ic instanceof SaveFSCommand)) {
+            ic = new SaveFSCommand();
+        }
+        ic.Execute(fs, ipr, System.out::println);
     }
 
     public void add(){
-        AddInfoCommand aic = new AddInfoCommand();
-        IParameterReader ipr = new ReadParameters();
-        IMessageWriter imw = new IMessageWriter() {
-            String message ="заглушка";
-            @Override
-            public void write(String message) {
-                System.out.println(message);
-            }
-        };
-        aic.Execute(fs, ipr, imw);
+        if (!(ic instanceof AddInfoCommand)) {
+            ic = new AddInfoCommand();
+        }
+        ic.Execute(fs, ipr, System.out::println);
+    }
+
+    public void defragmentation(){
+        if (!(ic instanceof DefragmentationCommand)) {
+            ic = new DefragmentationCommand();
+        }
+        /*fs = new FileSystem(1, "",
+                "", 0, 0, 100);*/
+        ic.Execute(fs, ipr, System.out::println);
+    }
+
+    public void fragmentation(){
+        if (!(ic instanceof FragmentationCommand)) {
+            ic = new FragmentationCommand();
+        }
+        ic.Execute(fs, ipr, System.out::println);
+    }
+
+    public void title(){
+        if (!(ic instanceof TitleCommand)) {
+            ic = new TitleCommand();
+        }
+        ic.Execute(fs, ipr, System.out::println);
+    }
+
+    public void title_in_order(){
+        if (!(ic instanceof TitleInOrderCommand)) {
+            ic = new TitleInOrderCommand();
+        }
+        ic.Execute(fs, ipr, System.out::println);
     }
 }
