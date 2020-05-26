@@ -32,7 +32,9 @@ public class CreateFileCommand implements ICommand {
 
     // Функция создания файла. Сначала пытаемся создать файл в пустых промежутках, затем - в конце, иначе - false.
     private boolean createFile(FileSystem fs, DataInfo newFileInfo) {
-        if (FragmentationCommand.emptySpace(fs) < newFileInfo.getSize() || maxContinuousEmpty(fs) < newFileInfo.getSize()) {
+        if (FragmentationCommand.emptySpace(fs) < newFileInfo.getSize()
+                || maxContinuousEmpty(fs) < newFileInfo.getSize()
+                || !checkExistingFileName(fs, newFileInfo.getNameFile())) {
             return false;
         } else {
             if (fs.seg.isEmpty()) {    // Если ФС пустая - добавляем первый сегмент, возвращаем искомые позиции
@@ -176,6 +178,20 @@ public class CreateFileCommand implements ICommand {
             maxempty = FileSystem.fileSystemSize - full - empty;
         empty += FileSystem.fileSystemSize - full - empty;
         return maxempty;
+    }
+
+    // Проверка на создания файла с уже существующим именем
+    private boolean checkExistingFileName(FileSystem fs, String fileName) {
+            for (int i = 0; i < fs.seg.size(); i++) {
+                for (int j = 0; j < fs.seg.get(i).info.size(); j++) {
+                    if (fs.seg.get(i).info.get(j).getTypeNote() == 1) {
+                        if (fs.seg.get(i).info.get(j).getNameFile().equals(fileName)) {
+                            return false;
+                        }
+                    }
+                }
+            }
+        return true;
     }
 
 }
