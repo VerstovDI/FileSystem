@@ -11,4 +11,6 @@ public interface IParameterReader {
     int readFSSize(String message);  // Считывает число сегментов ФС
 
     int readSizeForFiles(String message); // Считывает размер под файлы в ФС
+
+    int readNumbers(String message);// Считывание чисел без дополнительных проверок, например для чтения номера тома и тд
 }

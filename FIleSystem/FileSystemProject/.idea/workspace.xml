@@ -20,8 +20,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ae481bf-e888-47d9-86de-48545317ad50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFile/CreateFileCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/CreateFS/CreateFSCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/Defragmentation/DefragmentationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/Defragmentation/DefragmentationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/DownloadFS/DownloadFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/DownloadFS/DownloadFSCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/Fragmentation/FragmentationCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/Fragmentation/FragmentationCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/ParameterReaders/ReadParameters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Functions/SaveFS/SaveFSCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Functions/SaveFS/SaveFSCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/FileSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IParameterReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Structure/FileSystemStructure/IParameterReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/AddInfo/AddInfoCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFS/CreateFSCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/CreateFile/CreateFileCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/Defragmentation/DefragmentationCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/Defragmentation/DefragmentationCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/DeleteFile/DeleteFileCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/DownloadFS/DownloadFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/DownloadFS/DownloadFSCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/FindPlace/FindPlace.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/FindPlace/FindPlace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/Fragmentation/FragmentationCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/Fragmentation/FragmentationCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/ParameterReaders/ReadParameters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/SaveFS/SaveFSCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/SaveFS/SaveFSCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/Title/TitleCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/Title/TitleCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Functions/TitleInOrder/TitleInOrderCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Functions/TitleInOrder/TitleInOrderCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Monitor/monitor/Monitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Monitor/monitor/Monitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Monitor/monitor/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Monitor/monitor/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/FileSystem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IParameterReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/FileSystemStructure/IParameterReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/tester.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Structure/Main/testerDownloadSaveFile.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -226,6 +259,7 @@
       <workItem from="1590404320577" duration="5177000" />
       <workItem from="1590410081808" duration="1757000" />
       <workItem from="1590492413059" duration="4573000" />
+      <workItem from="1590584392076" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="1) Слил все измениния, что сбросил Дима, скорректировал по мелочи;&#10;2) Добавил комментирование к нескольким кускам кода;&#10;3) Скорректировал в DataInfo модификаторы доступа;&#10;4) Скорректировал функцию создания файла, добавив функцию &quot;Добавить сегмент&quot;;&#10;5) Прочие правки">
       <created>1588762942061</created>
@@ -316,10 +350,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="295" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589460528488" />
-    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1590318765285">
+    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1590584406454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590318765285" />
+    <state x="808" y="409" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590584406454" />
     <state x="564" y="445" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1588427315464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -333,25 +367,25 @@
     </state>
     <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590140259282" />
     <state x="526" y="213" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1589901299602" />
-    <state width="1877" height="177" key="GridCell.Tab.0.bottom" timestamp="1590498607564">
+    <state width="1877" height="235" key="GridCell.Tab.0.bottom" timestamp="1590584798498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590498607564" />
+    <state width="1877" height="235" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590584798498" />
     <state width="1320" height="60" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1589531541478" />
-    <state width="1877" height="177" key="GridCell.Tab.0.center" timestamp="1590498607564">
+    <state width="1877" height="235" key="GridCell.Tab.0.center" timestamp="1590584798498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590498607564" />
+    <state width="1877" height="235" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590584798498" />
     <state width="1320" height="60" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1589531541474" />
-    <state width="1877" height="177" key="GridCell.Tab.0.left" timestamp="1590498607563">
+    <state width="1877" height="235" key="GridCell.Tab.0.left" timestamp="1590584798497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590498607563" />
+    <state width="1877" height="235" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590584798497" />
     <state width="1320" height="60" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1589531541472" />
-    <state width="1877" height="177" key="GridCell.Tab.0.right" timestamp="1590498607564">
+    <state width="1877" height="235" key="GridCell.Tab.0.right" timestamp="1590584798498">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="177" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590498607564" />
+    <state width="1877" height="235" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590584798498" />
     <state width="1320" height="60" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1589531541476" />
     <state width="1877" height="247" key="GridCell.Tab.1.bottom" timestamp="1590497157143">
       <screen x="0" y="0" width="1920" height="1040" />

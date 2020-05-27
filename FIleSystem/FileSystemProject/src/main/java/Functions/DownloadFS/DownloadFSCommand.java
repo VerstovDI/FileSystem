@@ -44,15 +44,6 @@ public class DownloadFSCommand implements ICommand {
         FileInputStream fi = new FileInputStream(new File(filename+".txt"));
         ObjectInputStream oi = new ObjectInputStream(fi);
         FileSystem fs = (FileSystem) oi.readObject();//считали параметры FS
-
-        /*
-        CreateFileCommand createFileCommand=new CreateFileCommand();
-        String line=null;
-        BufferedReader br = new BufferedReader(new FileReader(filename+".txt"));
-        while ((line = br.readLine()) != null) {
-            createFileCommand.createFile(fs,(DataInfo)oi.readObject());
-        }
-        */
         oi.close();
         fi.close();
         return fs;
