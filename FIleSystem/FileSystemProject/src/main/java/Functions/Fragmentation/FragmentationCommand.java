@@ -53,7 +53,6 @@ public class FragmentationCommand implements ICommand {
                     empty += fs.seg.get(j).info.get(i).getSize();
                 }
             }
-
         empty += FileSystem.fileSystemSize - full - empty;
         return empty;
     }
