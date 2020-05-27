@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Program {
 
     static final Monitor monitor = new Monitor(new FileSystem(0, "",
-            "", 0, 0, 100));
+            "", 0, 0, 0));
 
     public static int intInput(){
         int rez;
@@ -72,24 +72,38 @@ public class Program {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         boolean check = false;
+        boolean needSave = false;
         init();
         while (true) {
             System.out.print(monitor.fs.ownerName + "> ");
             String command = sc.nextLine();
 
             if (command.trim().equals("exit")) {
-                doWithQuestionAboutSave((monitor) -> {});
+                if (needSave) {
+                    doWithQuestionAboutSave((monitor) -> {
+                    });
+                }
                 break;
             }
 
             if (command.trim().equals("create")) {
-                doWithQuestionAboutSave(Monitor::create);
+                if (needSave) {
+                    doWithQuestionAboutSave(Monitor::create);
+                }else{
+                    monitor.create();
+                }
                 check = true;
+                needSave = true;
             }
 
             if (command.trim().equals("download")) {
-                doWithQuestionAboutSave(Monitor::download);
+                if (needSave) {
+                    doWithQuestionAboutSave(Monitor::download);
+                }else{
+                    monitor.download();
+                }
                 check = true;
+                needSave = false;
             }
 
             if (command.trim().equals("help")) {
@@ -100,21 +114,25 @@ public class Program {
             if (command.trim().equals("create file")) {
                 monitor.file();
                 check = true;
+                needSave = true;
             }
 
             if (command.trim().equals("delete")) {
                 monitor.delete();
                 check = true;
+                needSave = true;
             }
 
             if (command.trim().equals("save")) {
                 monitor.save();
                 check = true;
+                needSave = false;
             }
 
             if (command.trim().equals("add")) {
                 monitor.add();
                 check = true;
+                needSave = true;
             }
 
             if (command.trim().equals("title")) {
@@ -130,6 +148,7 @@ public class Program {
             if (command.trim().equals("defragmentation")) {
                 monitor.defragmentation();
                 check = true;
+                needSave = true;
             }
 
             if (command.trim().equals("fragmentation")) {

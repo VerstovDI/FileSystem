@@ -23,6 +23,7 @@ public class TitleInOrderCommand implements ICommand {
         for (String str: titleInOrderArray) {
             title.append(str + "\n");
         }
+        title.delete(title.length()-1,title.length());
         message.write(title.toString());
     }
 
