@@ -98,6 +98,20 @@ public class ReadParameters implements IParameterReader {
         return size;
     }
 
+    @Override
+    public int readNumbers(String message) {
+        Scanner sc = new Scanner(System.in);
+        int size;
+        System.out.format(message);
+        while (!sc.hasNextInt()) {
+            System.out.println("Введено не число! Повторите ввод, пожалуйста!");
+            sc.next();
+        }
+        size = sc.nextInt();
+        return size;
+    }
+
+
     // Проверка корректности имени файла
     private boolean checkFileName(String fileName) {
         return fileName.length() <= DataInfo.fileNameLengthLimit && fileName.length() > 0;

@@ -27,7 +27,7 @@ public class CreateFSCommand implements ICommand {
         this.fileSystemSize = parameterReader.readSizeForFiles("Введите максимальный размер дискового пространства ФС: ");
         this.systemName = parameterReader.readFileName("Введите название файловой системы: ");
         this.ownerName = parameterReader.readFileName("Введите имя владельца файловой системы: ");
-        this.tomId = parameterReader.readFileSize("Введите номер тома: ");
-        this.version = parameterReader.readFileSize("Введите версию ФС: ");
+        this.tomId = parameterReader.readNumbers("Введите номер тома: ");
+        this.version = parameterReader.readNumbers("Введите версию ФС: ");
     }
 }

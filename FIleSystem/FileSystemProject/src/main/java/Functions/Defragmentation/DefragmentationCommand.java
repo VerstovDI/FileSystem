@@ -8,7 +8,7 @@ public class DefragmentationCommand implements ICommand {
     @Override
     public void Execute(FileSystem fs, IParameterReader parameter, IMessageWriter message) {
         if (fs.seg.isEmpty()) {//пустая ли ФС
-
+            message.write("Файловая система пуста");
         } else {
             for (int i = 0; i < fs.seg.size(); i++) { sort(fs.seg.get(i)); }
             for(int i = 0; i < fs.seg.size()-1; i++){//проходим по каждому сегменту
@@ -36,7 +36,7 @@ public class DefragmentationCommand implements ICommand {
             repair(fs);
 
 
-        message.write("Defragmentation complete");
+            message.write("Defragmentation complete");
 
         }
     }
@@ -64,7 +64,7 @@ public class DefragmentationCommand implements ICommand {
         for(int i=0;i<s.info.size();i++)
             if(s.info.get(i).getTypeNote()==0)
                 return i;
-            return -1;
+        return -1;
     }
     private int getNextNotEmpty(Segment s){
         for(int i=0;i<s.info.size();i++)
@@ -98,7 +98,7 @@ public class DefragmentationCommand implements ICommand {
             if (fs.seg.get(last).info.get(i).getTypeNote() == 0) {
                 fs.seg.get(last).info.remove(i);
                 i --;
-             }
+            }
 
         }
     }

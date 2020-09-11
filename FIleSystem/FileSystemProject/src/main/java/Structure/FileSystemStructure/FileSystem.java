@@ -13,6 +13,7 @@ public class FileSystem implements Serializable {
     public ArrayList<Segment> seg;          // Массив сегментов ФС. В системе может быть не более Segment.segmentsLimit (31) сегмента.
     public int cntOfSegments;               // Желаемое число сегментов в каталоге (оно обязано быть <= Segment.segmentsLimit).
     public static int fileSystemSize;       // Максимальный размер, который могут занимать файлы в файловой системе
+    public int fileSystemSizeCrunch;        // костыль для обхода static
 
     public FileSystem (int size, String systemName, String ownerName, int tomId, int version, int fileSystemSize) {
         this.systemName = systemName;
@@ -23,7 +24,9 @@ public class FileSystem implements Serializable {
         ArrayList<Segment> buf = new ArrayList<>();
         buf.ensureCapacity(size);
         seg = buf;
+        this.fileSystemSizeCrunch=fileSystemSize;
         FileSystem.fileSystemSize = fileSystemSize;
+
     }
 
     @Override
@@ -32,8 +35,8 @@ public class FileSystem implements Serializable {
                 "\nownerName:"+ownerName+
                 "\ntomId:"+tomId+
                 "\nversion:"+version+
-                // "\nseg:"+seg.toString()+
-                "\ncntOfSegments:"+cntOfSegments;
+                "\ncntOfSegments:"+cntOfSegments+
+                "\nfileSystemSizeCrunch:"+fileSystemSizeCrunch;
     }
 
     public void copy (FileSystem fsbuf) {
@@ -43,5 +46,7 @@ public class FileSystem implements Serializable {
         this.version = fsbuf.version;
         this.cntOfSegments = fsbuf.cntOfSegments;
         this.seg = fsbuf.seg;
+        this.fileSystemSizeCrunch=fsbuf.fileSystemSizeCrunch;
+        FileSystem.fileSystemSize=fileSystemSizeCrunch;
     }
 }
