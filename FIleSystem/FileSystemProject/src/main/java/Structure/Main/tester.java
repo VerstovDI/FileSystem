@@ -1,3 +1,4 @@
+/*
 package Structure.Main;
 
 import Functions.AddInfo.AddInfoCommand;
@@ -91,4 +92,4 @@ public class tester {
         titleOrderCommand.Execute(newFileSystem,titleOrderParameters,imw4 );
     }
 
-}
+}*/

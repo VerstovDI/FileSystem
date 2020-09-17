@@ -28,7 +28,7 @@ public class SaveFSCommand implements ICommand {
     }
 
     public  void Save(FileSystem fileSystem,String fileName) throws IOException {
-        FileOutputStream f = new FileOutputStream(new File(fileName+".txt"));
+        FileOutputStream f = new FileOutputStream(new File("E:\\" + fileName + ".txt"));
         ObjectOutputStream o = new ObjectOutputStream(f);
         o.writeObject(fileSystem);
         for(int i=0;i<fileSystem.seg.size();i++){

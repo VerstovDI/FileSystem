@@ -1,6 +1,8 @@
 package Monitor.monitor;
 
 import Structure.FileSystemStructure.FileSystem;
+
+import java.net.URISyntaxException;
 import java.util.function.Consumer;
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -69,7 +71,7 @@ public class Program {
         }
     }
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, URISyntaxException {
         Scanner sc = new Scanner(System.in);
         boolean check = false;
         init();

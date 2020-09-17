@@ -14,7 +14,10 @@ import Functions.TitleInOrder.TitleInOrderCommand;
 import Structure.FileSystemStructure.FileSystem;
 import Structure.FileSystemStructure.ICommand;
 import Structure.FileSystemStructure.IParameterReader;
+
 import java.io.*;
+import java.net.URISyntaxException;
+import java.nio.charset.StandardCharsets;
 
 public class Monitor {
 
@@ -44,11 +47,12 @@ public class Monitor {
         ic.Execute(fs, ipr, System.out::println);
     }
 
-    public void help() throws IOException {
+    public void help() throws IOException, URISyntaxException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String helperPath = System.getProperty("user.dir") + "/src/main/java/Monitor/monitor/help.txt";
-        File f = new File(helperPath);
-        BufferedReader fin = new BufferedReader(new FileReader(f));
+        //String helperPath = System.getProperty("user.dir") + "/src/main/java/Monitor/monitor/help.txt";
+        String helperPath = "help.txt";
+        InputStream is = this.getClass().getClassLoader().getResourceAsStream(helperPath);
+        BufferedReader fin = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
         String line;
         while ((line = fin.readLine()) != null) System.out.println(line);
     }

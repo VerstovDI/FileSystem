@@ -1,3 +1,4 @@
+/*
 package Structure.Main;
 
 import Functions.CreateFile.CreateFileCommand;
@@ -68,3 +69,4 @@ public class testerDownloadSaveFile {
       //  delFileCommand.Execute(newFileSystem, delFileParameters, imw1);
     }
 }
+*/
